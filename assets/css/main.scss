@@ -1,0 +1,148 @@
+$main-color: #4A69BD;
+$red-color: #DE1A02;
+$yellow-color: #F6B93B;
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: "Cairo", sans-serif;
+}
+
+.relative {
+    position: relative;
+}
+
+.absolute {
+    position: absolute;
+}
+
+main {
+    background-image: url(../imgs/bg-overlay.png);
+    background-attachment: fixed;
+    background-size: contain;
+}
+/* scroll */
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px grey;
+}
+
+::-webkit-scrollbar-thumb {
+    background: var(--main-color);
+    border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: var(--sec-color);
+}
+.bg-primary{
+    background-color: $main-color !important;
+}
+// nav start
+.nav-item {
+    a{
+        color: #fff;
+        transition: all 500ms;
+        &::after{
+            content: "";
+            display: block;
+            width: 0;
+            height: 2px;
+            background-color: $yellow-color;
+            transition: all 500ms;
+            margin: 0 auto;
+        }
+        &:hover{
+            &::after{
+                width: 100%;
+            }
+        }
+        &:hover{
+            color: $yellow-color;
+        }
+    }
+    a.active{
+        color: $yellow-color !important;
+        &::after{
+            width: 100%;
+        }
+    }
+}
+/* footer start */
+footer{
+    padding: 40px 0 0;
+    background-color: $main-color;
+    color: #fff;
+    a{
+    color: #fff;
+    margin: 2px;
+    font-size: 14px;
+    text-decoration: none;
+    transition: all 500ms;
+    &:hover{
+        color: $yellow-color;
+    }
+}
+    .f-nav a{
+        &::after{
+            content: "";
+            display: block;
+            width: 0;
+            height: 2px;
+            background-color: $yellow-color;
+            transition: all 500ms;
+            margin: 0 auto;
+        }
+        &:hover{
+            &::after{
+                width: 100%;
+            }
+        }
+    }
+    div.up {
+        position: fixed;
+        right: 3%;
+        bottom: 3%;
+        border-radius: 50%;
+        display: none;
+        cursor: pointer;
+        z-index: 99;
+        i {
+            color: var(--sec-color);
+            font-size: 30px;
+            text-align: center;
+            transition: 500ms;
+            &:hover{
+                transform: scale(1.1) translateY(-5px);
+            }
+        }
+    }
+    .copyright p {
+        width: fit-content;
+        margin: 0 auto;
+        border-top: 1px solid gainsboro;
+    }
+    .social{
+        img{
+            transition: all 500ms;
+            &:hover{
+                transform: translatey(-5px) scale(1.1);
+            }
+        }
+    }
+}
+
+@media (max-width: 992px) {
+    footer .f-nav {
+        text-align: center;
+    }
+}
+
+
+/* footer end */
