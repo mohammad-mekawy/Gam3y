@@ -1,15 +1,20 @@
-$(document).ready(function() {
+// Up BTN
+var myUpButton = document.querySelector('div.up');
+window.onscroll = function() {
+    window.scrollY > 120 ? myUpButton.style.opacity = '1' : myUpButton.style.opacity = '0';
+};
+myUpButton.style.opacity = window.scrollY > 120 ? '1' : '0';
 
-
-    var myUpButton = $("div.up");
-    $(window).scrollTop() > 120 ? myUpButton.fadeIn() : myUpButton.fadeOut();
-    $(window).on("scroll", function() {
-        $(window).scrollTop() > 120 ? myUpButton.fadeIn() : myUpButton.fadeOut();
+myUpButton.onclick = function() {
+    window.scrollTo({
+        top: 0,
+        behavior: 'smooth'
     });
+};
+// navbar shadow
+var navbar = document.querySelector('.navbar');
 
-    myUpButton.click(function() {
-        $('html, body').animate({
-            scrollTop: 0
-        }, 500);
-    });
-});
+window.onscroll = function() {
+    window.scrollY > 120 ? navbar.classList.add('shadow') : navbar.classList.remove('shadow');
+};
+window.scrollY > 120 ? navbar.classList.add('shadow') : navbar.classList.remove('shadow');

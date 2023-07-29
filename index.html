@@ -9,14 +9,17 @@
     <meta name="description" content="Gam3y description">
     <link rel="stylesheet" type="text/css" href="assets/css/bootstrap.min.css" />
     <link rel="stylesheet" type="text/css" media="all" href="assets/css/main.css" />
-    <!-- <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous" /> -->
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/favicon/">
+<link rel="icon" type="image/png" sizes="32x32" href="assets/favicon//favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="assets/favicon//favicon-16x16.png">
+<link rel="manifest" href="assets/favicon//site.webmanifest">
 
 </head>
 
 <body>
     <header class="bg-primary">
   <!-- nav bar start -->
-        <nav class="navbar navbar-expand-lg bg-primary" data-bs-theme="dark">
+        <nav class="navbar navbar-expand-lg bg-primary fixed-top" data-bs-theme="dark">
             <div class="container">
               <a class="navbar-brand" href="/"><img src="assets/imgs/Light-logo.svg" alt="Light-logo"></a>
               <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -40,7 +43,14 @@
               </div>
             </div>
           </nav>
-
+<div class="hero">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6"></div>
+            <div class="col-md-6"><img src="assets/imgs/dark-logo.webp" alt=""></div>
+        </div>
+    </div>
+</div>
   
     </header>
 
@@ -76,7 +86,7 @@
             </div>
         </div>
         <div class="up">
-            <i class="fas fa-arrow-circle-up"></i>
+            <img src="assets/imgs/Up.webp" alt="arrow up">
         </div>
     </footer>
     <!-- footer end -->
@@ -85,37 +95,7 @@
     <script src="assets/js/bootstrap.min.js"></script>
     <!-- <script src="assets/js/owl.carousel.min.js"></script> -->
     <script src="assets/js/main.js"></script>
-    <!-- <script>
-        var desc = $(".desc");
-        var f_top = desc.position().top;
-        $(window).one("scroll", function () {
-            if ($(window).scrollTop() + $(window).height() >= f_top) {
-                var i = 0;
-                var txt = 'Our vision is to serve science by enhancing"Knowledge Globalization".';
-                var speed = 50;
 
-                (function typeWriter() {
-                    if (i < txt.length) {
-                        document.getElementById("vision").innerHTML += txt.charAt(i);
-                        i++;
-                        setTimeout(typeWriter, speed);
-                    }
-                })();
-                var n = 0;
-                var txt2 =
-                    'Our mission is to facilitate the dissemination of natural scientific researches among a broad range of scientific communities rapidly and efficiently. Publishing theses reviews on our international portal is one of our mission aiming to spotlight on scientific outcomes that are written in languages other than English.';
-                var speed2 = 50;
-
-                (function typeWriter2() {
-                    if (n < txt2.length) {
-                        document.getElementById("mission").innerHTML += txt2.charAt(n);
-                        n++;
-                        setTimeout(typeWriter2, speed2);
-                    }
-                })();
-            }
-        });
-    </script> -->
 </body>
 
 </html>
