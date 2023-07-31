@@ -121,6 +121,12 @@ footer div.up {
 }
 footer div.up img {
   border-radius: 50%;
+  width: 35px;
+  border: 2px solid transparent;
+  transition: all 500ms;
+}
+footer div.up img:hover {
+  border: 2px solid #F6B93B;
 }
 footer .copyright p {
   width: -moz-fit-content;

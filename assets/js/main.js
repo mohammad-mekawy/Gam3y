@@ -6,6 +6,8 @@ var navbar = document.querySelector('.navbar');
 window.onscroll = function() {
     window.scrollY > 120 ? navbar.classList.add('shadow') : navbar.classList.remove('shadow');
     window.scrollY > 120 ? myUpButton.style.opacity = '1' : myUpButton.style.opacity = '0';
+    window.scrollY > 120 ? navbar.classList.add('shadow') : navbar.classList.remove('shadow');
+    window.scrollY > 120 ? myUpButton.style.transform = 'translateY(-20px)' : myUpButton.style.transform = 'translateY(0)';
 };
 window.scrollY > 120 ? navbar.classList.add('shadow') : navbar.classList.remove('shadow');
 window.scrollY > 120 ? myUpButton.style.opacity = '1' : myUpButton.style.opacity = '0';

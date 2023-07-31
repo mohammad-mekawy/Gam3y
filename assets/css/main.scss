@@ -126,6 +126,12 @@ footer{
         z-index: 99;
         img{
             border-radius: 50%;
+            width: 35px;
+            border: 2px solid transparent;
+            transition: all 500ms;
+            &:hover{
+                border: 2px solid $yellow-color;
+            }
         }
     }
     .copyright p {
