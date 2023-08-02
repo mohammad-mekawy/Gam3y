@@ -1,4 +1,5 @@
 $main-color: #4A69BD;
+$main-light:lighten($main-color,5%);
 $red-color: #DE1A02;
 $yellow-color: #F6B93B;
 
@@ -22,6 +23,15 @@ main {
     background-image: url(../imgs/bg-overlay.png);
     background-attachment: fixed;
     background-size: contain;
+}
+a{
+    color: $yellow-color;
+}
+.btn-primary {
+  background-color: $yellow-color;
+}
+.kpy{
+  padding: 80px 0;
 }
 /* scroll */
 
@@ -83,7 +93,336 @@ header{
 
 /* Hero start */
 .hero{
-    min-height:5000px;
+  overflow: hidden;
+    .form_main {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        background-color: rgb(255, 255, 255);
+        padding: 30px 30px 30px 30px;
+        box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.062);
+        position: relative;
+        overflow: hidden;
+        z-index: 1;
+        &:hover{
+            &:before{
+                left: -500px;
+            }
+        }
+        &:before {
+            position: absolute;
+            content: "";
+            width: 380px;
+            height: 360px;
+            background-color: $yellow-color;
+            transform: rotate(45deg);
+            left: -200px;
+            bottom: 30px;
+            z-index: -1;
+            border-radius: 30px;
+            box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.082);
+            transition: all 800ms;
+          }
+          @media(max-width:992px){
+            &:before{
+              left: -240px;
+            }
+          }
+      }
+            
+      .heading {
+        font-size: 2em;
+        color: #2e2e2e;
+        font-weight: 700;
+        margin: 5px 0 10px 0;
+        z-index: 2;
+      }
+      
+      .inputContainer {
+        width: 100%;
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        z-index: 2;
+        margin-bottom: 20px;
+      }
+      
+      .inputIcon {
+        position: absolute;
+        left: 3px;
+      }
+      
+      .inputField {
+        width: 100%;
+        height: 30px;
+        background-color: transparent;
+        border: none;
+        border-bottom: 2px solid rgb(173, 173, 173);
+        margin: 10px 0;
+        color: black;
+        font-size: 1.2em;
+        font-weight: 500;
+        box-sizing: border-box;
+        padding-left: 30px;
+      }
+      
+      .inputField:focus {
+        outline: none;
+        border-bottom: 2px solid rgb(199, 114, 255);
+      }
+      
+      .inputField::placeholder {
+        color: rgb(80, 80, 80);
+        font-size: 1em;
+        font-weight: 500;
+      }
+      
+      #button {
+        z-index: 2;
+        position: relative;
+        width: 100%;
+        border: none;
+        background-color: $main-color;
+        height: 40px;
+        color: white;
+        font-size: 1.2em;
+        font-weight: 500;
+        letter-spacing: 1px;
+        margin: 10px;
+        cursor: pointer;
+      }
+      
+      #button:hover {
+        background-color: $main-light;
+      }
+      
+      .forgotLink {
+        z-index: 2;
+        font-size: 1em;
+        font-weight: 500;
+        color: $yellow-color;
+        text-decoration: none;
+        padding: 8px 15px;
+        border-radius: 20px;
+        transition: all 500ms;
+        &:hover{
+          text-decoration: underline;
+          color: $main-color;
+        }
+      }
+      .Shape{
+        width: 100%;
+        height: 100px;
+        background-image: url(../imgs/hero-curve.webp);
+        background-position: center;
+        background-size: cover;
+        padding: 107px 0;
+        bottom: -36px;
+        left: 0;
+      }    
+}
+
+/*vision & Mission start*/
+.VisionMission{
+    .card {
+        position: relative;
+        width: 70%;
+        height: 320px;
+        background: linear-gradient(-45deg, $yellow-color 0%, $red-color 100% );
+        border-radius: 10px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        overflow: hidden;
+        transition: all 0.6s cubic-bezier(0.23, 1, 0.320, 1);
+        img{
+            width: 200px;
+        }
+      }
+      .card2{
+        background: linear-gradient(-135deg, $red-color 0%, $yellow-color 100% );
+        img{
+            width: 300px;
+        }
+      }
+      .card:hover {
+        transform: rotate(-5deg) scale(1.1);
+        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+      }
+      .card2:hover {
+        transform: rotate(5deg) scale(1.1);
+      }
+      
+      .card__content {
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%) rotate(-45deg);
+        width: 100%;
+        height: 100%;
+        padding: 20px;
+        box-sizing: border-box;
+        background-color: #fff;
+        opacity: 0;
+        transition: all 0.6s cubic-bezier(0.23, 1, 0.320, 1);
+      }
+      
+      .card:hover .card__content {
+        transform: translate(-50%, -50%) rotate(0deg);
+        opacity: 1;
+      }
+      
+      .card__title {
+        margin: 0;
+        font-size: 24px;
+        color: #333;
+        font-weight: 700;
+      }
+      
+      .card__description {
+        margin: 10px 0 0;
+        font-size: 14px;
+        color: #777;
+        line-height: 1.4;
+      }
+      
+      .card:hover svg {
+        scale: 0;
+        transform: rotate(-45deg);
+      }
+      
+}
+
+/* Metrics start*/
+.Metrics{
+    background-image: url(../imgs/MetricsBG.svg);
+    background-position: center center;
+    background-size: cover;
+    padding: 80px 70px 170px;
+    .card {
+        width: 240px;
+        height: 240px;
+        background: #fff;
+        position: relative;
+        display: flex;
+        place-content: center;
+        place-items: center;
+        overflow: hidden;
+        border-radius: 50%;
+        transition: transform 500ms ease-in-out;
+        box-shadow: 0 10px 10px 0 #0000003b;
+        &:hover{
+            transform: scale(1.1);
+            background: $main-color;
+            &::before,&::after{
+                opacity: 1;
+            }
+            &::before{
+                background-image: linear-gradient(180deg, $red-color, $yellow-color);
+            }
+        }
+        h2 {
+            z-index: 1;
+            font-size: 2em;
+          }
+          img,h3{
+            z-index: 1;
+          }
+          &::before {
+            content: '';
+            position: absolute;
+            width: 100px;
+            height: 130%;
+            animation: rotBGimg 5s linear infinite;
+            transition: all 1s linear;
+            opacity: 0;
+          }
+          &::after {
+            content: '';
+            position: absolute;
+            background: #fff;
+            inset: 5px;
+            border-radius: 50%;
+            opacity: 0;
+          }      
+      }      
+      @keyframes rotBGimg {
+        from {
+          transform: rotate(0deg);
+        }
+      
+        to {
+          transform: rotate(360deg);
+        }
+      }
+}
+@media(max-width:992px){
+  .Metrics{
+    padding: 80px 70px 30px;
+  }
+}
+/* Offer start*/
+.Offer{
+  h2{
+    color: $main-color;
+  }
+
+.card {
+  position: relative;
+  height: auto;
+  background: $main-color;
+  border-radius: 20px;
+  padding: 20px;
+  padding-left: 130px;
+  transition: 0.3s;
+  max-width: 80%;
+  margin: auto;
+  box-shadow: 0 1px 25px rgba(0,0,0,0.2);
+  &:hover{
+    box-shadow: 0 0 0 rgba(0,0,0,0.2);
+  }
+  .G-content{
+    width: 80%;
+  }
+}
+
+.card:hover {
+  filter: 
+  drop-shadow(5px 5px 0px $yellow-color)
+  drop-shadow(5px 5px 0px $red-color)
+  drop-shadow(5px 5px 0px $main-color);
+  scale: 1.05;
+}
+.card-left:hover {
+  filter: 
+  drop-shadow(-5px 5px 0px $yellow-color)
+  drop-shadow(-5px 5px 0px $red-color)
+  drop-shadow(-5px 5px 0px $main-color);
+  scale: 1.05;
+}
+
+img {
+  position: absolute;
+  top: 18px;
+  left: 18px;
+}
+}
+
+/* Shots start */
+.Shots{
+  img{
+    transition: all 500ms;
+    margin: auto;
+    &:hover{
+      transform: scale(1.1) translateY(-5px);
+    }
+  }
 }
 /* footer start */
 footer{
