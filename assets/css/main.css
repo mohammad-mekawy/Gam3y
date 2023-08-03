@@ -62,6 +62,9 @@ header {
 .navbar {
   transition: all 500ms;
 }
+.navbar .Logo {
+  transition: all 500ms;
+}
 
 .nav-item a {
   color: #fff;

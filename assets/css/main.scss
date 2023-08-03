@@ -60,6 +60,9 @@ header{
 }
 .navbar{
     transition: all 500ms;
+    .Logo{
+      transition: all 500ms;
+    }
 }
 .nav-item {
     a{
