@@ -26,24 +26,29 @@ myUpButton.onclick = function() {
 
 // Count to plugin start
 class Counter {
-    constructor(element, options) {
-      this.element = element;
-      this.options = Object.assign({}, Counter.DEFAULTS, this.dataOptions(), options);
-      this.init();
-    }
-  
-    static DEFAULTS = {
-      from: 0,
-      to: 0,
-      speed: 1000,
-      refreshInterval: 100,
-      decimals: 0,
-      formatter: function(value, options) {
-        return value.toFixed(options.decimals);
-      },
-      onUpdate: null,
-      onComplete: null
-    }
+  constructor(element, options) {
+    this.element = element;
+    this.options = Object.assign({}, Counter.DEFAULTS, this.dataOptions(), options);
+    this.init();
+  }
+
+  static DEFAULTS = {
+    from: 0,
+    to: 0,
+    speed: 1000,
+    refreshInterval: 100,
+    decimals: 0,
+    formatter: function(value, options) {
+      let roundedValue = Math.round(value);
+      let formattedValue = new Intl.NumberFormat().format(roundedValue.toFixed(options.decimals));
+      if (roundedValue >= options.to) {
+        formattedValue += "+";
+      }
+      return formattedValue;
+  },
+    onUpdate: null,
+    onComplete: null
+  }
   
     init() {
       this.value = this.options.from;
