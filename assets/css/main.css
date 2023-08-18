@@ -240,7 +240,7 @@ header {
   background: linear-gradient(-135deg, #DE1A02 0%, #F6B93B 100%);
 }
 .VisionMission .card2 img {
-  width: 300px;
+  width: 260px;
 }
 .VisionMission .card:hover {
   transform: rotate(-5deg) scale(1.1);

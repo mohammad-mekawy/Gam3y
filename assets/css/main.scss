@@ -277,7 +277,8 @@ header{
       .card2{
         background: linear-gradient(-135deg, $red-color 0%, $yellow-color 100% );
         img{
-            width: 300px;
+            width: 260px;
+            // margin-bottom: 20px;
         }
       }
       .card:hover {

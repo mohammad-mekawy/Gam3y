@@ -1,0 +1,424 @@
+$main-color: #4A69BD;
+$main-light:lighten($main-color,5%);
+$red-color: #DE1A02;
+$yellow-color: #F6B93B;
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: "Cairo", sans-serif;
+}
+
+.relative {
+    position: relative;
+}
+
+.absolute {
+    position: absolute;
+}
+
+main {
+    background-image: url(../imgs/bg-overlay.png);
+    background-attachment: fixed;
+    background-size: contain;
+}
+a{
+    color: $yellow-color;
+}
+.btn-primary {
+  background-color: $yellow-color;
+}
+.kpy{
+  padding: 80px 0;
+}
+.width-100{
+  width: 100%;
+}
+/* scroll */
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px grey;
+}
+
+::-webkit-scrollbar-thumb {
+    background: $yellow-color;
+    border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: $main-color;
+}
+.bg-primary{
+    background-color: $main-color !important;
+}
+/* nav start */
+header{
+    padding-top: 142px;
+}
+.navbar{
+    transition: all 500ms;
+    .Logo{
+      transition: all 500ms;
+    }
+}
+.nav-item {
+    a{
+        color: #fff;
+        transition: all 500ms;
+        &::after{
+            content: "";
+            display: block;
+            width: 0;
+            height: 2px;
+            background-color: $yellow-color;
+            transition: all 500ms;
+            margin: 0 auto;
+        }
+        &:hover{
+            &::after{
+                width: 100%;
+            }
+        }
+        &:hover{
+            color: $yellow-color;
+        }
+    }
+    a.active{
+        color: $yellow-color !important;
+        &::after{
+            width: 100%;
+        }
+    }
+}
+
+/* Hero start */
+.hero{
+  overflow: hidden;
+  background-color: #fff;
+  .contact-con{
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+    .title{
+        padding: 50px 0 0 40px;
+        h2{
+            color: $yellow-color;
+        }
+    }
+    .form {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        padding: 30px 30px 40px;
+        background: transparent;
+        border-radius: 10px;
+        overflow: hidden;
+        perspective: 1000px;
+        transform-style: preserve-3d;
+        transform: rotateX(-10deg);
+        transition: all 0.3s ease-in-out;
+        animation: form-animation 0.5s ease-in-out;
+      }
+      
+      @keyframes form-animation {
+        from {
+          transform: rotateX(-30deg);
+          opacity: 0;
+        }
+      
+        to {
+          transform: rotateX(0deg);
+          opacity: 1;
+        }
+      }
+      
+      .input,textarea {
+        padding: 15px 10px;
+        border-radius: 5px;
+        margin-bottom: 10px;
+        background-color: transparent;
+        transition: border-color 0.3s ease-in-out, background-color 0.3s ease-in-out, transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+        transform-style: preserve-3d;
+        color: $main-color;
+        border: 0 solid $yellow-color;
+        box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+      }
+      
+      .input::placeholder,textarea::placeholder {
+        color: $main-light;
+      }
+      
+      .input:hover,
+      .input:focus,textarea:hover,textarea:focus {
+        // border-color: $yellow-color;
+        background-color: transparent;
+        transform: scale(1.05) rotateY(20deg);
+        box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.3);
+        outline: none;
+      }
+      
+      button {
+        padding: 10px 20px;
+        border: none;
+        border-radius: 5px;
+        background-color: $yellow-color;
+        color: #fff;
+        font-size: 16px;
+        cursor: pointer;
+        transform-style: preserve-3d;
+        backface-visibility: hidden;
+        transform: rotateX(-10deg);
+        transition: all 0.3s ease-in-out;
+        box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+      }
+      
+      button:hover {
+        background-color: $main-color;
+        font-size: 17px;
+        transform: scale(1.05) rotateY(20deg) rotateX(10deg);
+        box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+      }
+      
+  }
+    .form_main {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        background-color: #fff;
+        padding: 30px 30px 30px 30px;
+        box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.062);
+        position: relative;
+        overflow: hidden;
+        z-index: 1;
+        &:hover{
+            &:before{
+                left: -500px;
+            }
+        }
+        &:before {
+            position: absolute;
+            content: "";
+            width: 380px;
+            height: 360px;
+            background-color: $yellow-color;
+            transform: rotate(45deg);
+            left: -200px;
+            bottom: 30px;
+            z-index: -1;
+            border-radius: 30px;
+            box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.082);
+            transition: all 800ms;
+          }
+          @media(max-width:992px){
+            &:before{
+              left: -240px;
+            }
+          }
+      }
+            
+      .heading {
+        font-size: 2em;
+        color: #2e2e2e;
+        font-weight: 700;
+        margin: 5px 0 10px 0;
+        z-index: 2;
+      }
+      
+      .inputContainer {
+        width: 100%;
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        z-index: 2;
+        margin-bottom: 20px;
+      }
+      
+      .inputIcon {
+        position: absolute;
+        left: 3px;
+      }
+      
+      .inputField, select {
+        width: 100%;
+        height: 30px;
+        background-color: transparent;
+        border: none;
+        border-bottom: 2px solid rgb(173, 173, 173);
+        margin: 10px 0;
+        color: black;
+        font-size: 1.2em;
+        font-weight: 500;
+        box-sizing: border-box;
+        padding-left: 30px;
+      }
+      .register-form{
+        .inputField{
+            padding-left: 10px;
+        }
+      }
+      .inputField:focus {
+        outline: none;
+        border-bottom: 2px solid $main-color;
+      }
+      .inputField::placeholder, select{
+        color: rgb(80, 80, 80);
+        font-size: 1em;
+        font-weight: 500;
+      }
+      .select-wrapper {
+        position: relative;    
+        width: 100%;   
+        &::after {
+            content: '\25BE'; /* Downward arrow */
+            position: absolute;
+            top: 50%;
+            right: 10px;
+            transform: translateY(-50%);
+            pointer-events: none; /* Make sure clicks pass through to the select */
+            color: $main-color; /* Arrow color */
+            transition: all 500ms;
+        }
+        select {
+        appearance: none;
+        border-bottom: 1px solid black;
+        width: 100%;
+        padding: 2px 10px;
+        border: none;
+        border-bottom: 2px solid rgb(173, 173, 173);
+        background-color: transparent;
+        margin: 10px 0;
+        &:focus {
+            border: none;
+            outline: none;
+            border-bottom: 2px solid $main-color;
+            background-color: transparent;
+        }
+        }
+    }
+    .select-wrapper:focus-within::after {
+        transform: translateY(-50%) rotate(180deg);
+    }
+      #button {
+        z-index: 2;
+        position: relative;
+        width: 100%;
+        border: none;
+        background-color: $main-color;
+        height: 40px;
+        color: white;
+        font-size: 1.2em;
+        font-weight: 500;
+        letter-spacing: 1px;
+        margin: 10px;
+        cursor: pointer;
+      }
+      
+      #button:hover {
+        background-color: $main-light;
+      }
+      .register-btn{
+        max-width: 50%;
+        transition: all 500ms;
+        &:hover{
+            max-width: 60%;
+        }
+      }
+      
+      .forgotLink {
+        z-index: 2;
+        font-size: 1em;
+        font-weight: 500;
+        color: $yellow-color;
+        text-decoration: none;
+        padding: 8px 15px;
+        border-radius: 20px;
+        transition: all 500ms;
+        &:hover{
+          text-decoration: underline;
+          color: $main-color;
+        }
+      }
+      .curved{
+        width: 100%;
+        bottom: -30px;
+      }
+}
+/* footer start */
+footer{
+    padding: 40px 0 0;
+    background-color: $main-color;
+    color: #fff;
+    a{
+    color: #fff;
+    margin: 2px;
+    font-size: 14px;
+    text-decoration: none;
+    transition: all 500ms;
+    &:hover{
+        color: $yellow-color;
+    }
+}
+    .f-nav a{
+        &::after{
+            content: "";
+            display: block;
+            width: 0;
+            height: 2px;
+            background-color: $yellow-color;
+            transition: all 500ms;
+            margin: 0 auto;
+        }
+        &:hover{
+            &::after{
+                width: 100%;
+            }
+        }
+    }
+    div.up {
+        position: fixed;
+        right: 3%;
+        bottom: 3%;
+        opacity: 0;
+        transition: all 500ms;
+        cursor: pointer;
+        z-index: 99;
+        img{
+            border-radius: 50%;
+            width: 35px;
+            border: 2px solid transparent;
+            transition: all 500ms;
+            &:hover{
+                border: 2px solid $yellow-color;
+            }
+        }
+    }
+    .copyright p {
+        width: fit-content;
+        margin: 0 auto;
+        border-top: 1px solid gainsboro;
+    }
+    .social,.up{
+        img{
+            transition: all 500ms;
+            &:hover{
+                transform: translatey(-5px) scale(1.1);
+            }
+        }
+    }
+}
+
+@media (max-width: 992px) {
+    footer .f-nav {
+        text-align: center;
+    }
+}
+
+
+/* footer end */
