@@ -2,6 +2,10 @@
   @each $position in ['left', 'bottom'] {
     .border-#{$position}-#{$color} {
       border-#{$position}: .25rem solid $value !important;
+      transition: all 300ms ease-in-out;
+    }
+    .border-#{$position}-#{$color}:hover {
+      border-#{$position}: .5rem solid $value !important;
     }
   }
 }
