@@ -97,9 +97,6 @@ header {
 }
 
 /* Hero start */
-.hero {
-  overflow: hidden;
-}
 .hero .form_main {
   display: flex;
   flex-direction: column;
