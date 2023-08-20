@@ -393,6 +393,16 @@ header {
   top: 18px;
   left: 18px;
 }
+@media (max-width: 992px) {
+  .Offer .card {
+    padding-left: unset;
+    text-align: center;
+  }
+  .Offer img {
+    position: unset;
+    margin-bottom: 10px;
+  }
+}
 
 /* Shots start */
 .Shots img {

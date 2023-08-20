@@ -449,6 +449,16 @@ img {
   top: 18px;
   left: 18px;
 }
+@media(max-width:992px){
+  .card{
+    padding-left: unset;
+    text-align: center;
+  }
+  img {
+    position: unset;
+    margin-bottom: 10px;
+  }
+}
 }
 
 /* Shots start */
