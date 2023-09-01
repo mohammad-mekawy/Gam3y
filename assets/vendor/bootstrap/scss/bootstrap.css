@@ -1772,6 +1772,18 @@ pre code {
   border: 0;
 }
 
+tbody tr {
+  transition: all 500ms;
+}
+tbody tr:hover {
+  color: #fff;
+  background-color: #2f56c7;
+}
+tbody tr:hover i {
+  transition: all 500ms;
+  color: #fff !important;
+}
+
 .form-control {
   display: block;
   width: 100%;

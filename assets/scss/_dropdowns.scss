@@ -19,3 +19,15 @@
     display: none;
   }
 }
+.subject-page{
+  li.nav-item.dropdown.no-arrow{
+    list-style: none;
+    display: inline-block;
+    .dropdown-menu{
+      min-width: unset;
+      i{
+        width: 20px;
+      }
+    }
+  }
+}

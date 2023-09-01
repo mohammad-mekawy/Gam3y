@@ -17,6 +17,12 @@
     <!-- Custom styles for this template-->
     <link href="assets/scss/sb-admin-2.css" rel="stylesheet">
 
+    <!-- Custom styles for this page -->
+    <link href="assets/vendor/datatables/dataTables.bootstrap4.min.css" rel="stylesheet">
+    <!-- owl carousel -->
+    <link rel="stylesheet" href="assets/css/owl.carousel.min.css">
+    <link rel="stylesheet" href="assets/css/owl.theme.default.min.css">
+
     <!-- favicon -->
     <link rel="apple-touch-icon" sizes="180x180" href="assets/favicon/">
     <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon/favicon-32x32.png">
@@ -80,17 +86,24 @@
             </li>
 
             <!-- Nav Item - Tables -->
-            <li class="nav-item">
+            <li class="nav-item ">
                 <a class="nav-link" href="news.html">
                     <i class="fas fa-fw fa-newspaper"></i>
                     <span>News</span></a>
             </li>
 
             <!-- Nav Item - Tables -->
+            <li class="nav-item ">
+                <a class="nav-link" href="events.html">
+                    <i class="fas fa-fw fa-calendar-day"></i>
+                    <span>Events</span></a>
+            </li>
+
+            <!-- Nav Item - Tables -->
             <li class="nav-item">
                 <a class="nav-link" href="suggestions.html">
                     <i class="fas fa-fw fa-paper-plane"></i>
-                    <span>Suggestions</span></a>
+                    <span>Suggestions / Claims</span></a>
             </li>
 
             <!-- Nav Item - Tables -->
@@ -193,7 +206,7 @@
                                         </div>
                                     </div>
                                     <div>
-                                        <div class="small text-gray-500">December 12, 2019</div>
+                                        <div class="small text-gray-500">December 12, 2023</div>
                                         <span class="font-weight-bold">Lorem ipsum dolor sit amet.</span>
                                     </div>
                                 </a>
@@ -204,7 +217,7 @@
                                         </div>
                                     </div>
                                     <div>
-                                        <div class="small text-gray-500">December 7, 2019</div>
+                                        <div class="small text-gray-500">December 7, 2023</div>
                                         Lorem ipsum dolor sit amet consectetur.
                                     </div>
                                 </a>
@@ -215,7 +228,7 @@
                                         </div>
                                     </div>
                                     <div>
-                                        <div class="small text-gray-500">December 2, 2019</div>
+                                        <div class="small text-gray-500">December 2, 2023</div>
                                         Lorem ipsum dolor sit.
                                     </div>
                                 </a>
@@ -239,8 +252,7 @@
                                 </h6>
                                 <a class="dropdown-item d-flex align-items-center" href="#">
                                     <div class="dropdown-list-image mr-3">
-                                        <img class="rounded-circle" src="assets/imgs/undraw_profile_1.svg"
-                                            alt="...">
+                                        <img class="rounded-circle" src="assets/imgs/undraw_profile_1.svg" alt="...">
                                         <div class="status-indicator bg-success"></div>
                                     </div>
                                     <div class="font-weight-bold">
@@ -251,8 +263,7 @@
                                 </a>
                                 <a class="dropdown-item d-flex align-items-center" href="#">
                                     <div class="dropdown-list-image mr-3">
-                                        <img class="rounded-circle" src="assets/imgs/undraw_profile_2.svg"
-                                            alt="...">
+                                        <img class="rounded-circle" src="assets/imgs/undraw_profile_2.svg" alt="...">
                                         <div class="status-indicator"></div>
                                     </div>
                                     <div>
@@ -263,8 +274,7 @@
                                 </a>
                                 <a class="dropdown-item d-flex align-items-center" href="#">
                                     <div class="dropdown-list-image mr-3">
-                                        <img class="rounded-circle" src="assets/imgs/undraw_profile_3.svg"
-                                            alt="...">
+                                        <img class="rounded-circle" src="assets/imgs/undraw_profile_3.svg" alt="...">
                                         <div class="status-indicator bg-warning"></div>
                                     </div>
                                     <div>
@@ -296,8 +306,7 @@
                             <a class="nav-link dropdown-toggle" href="#" id="userDropdown" role="button"
                                 data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                 <span class="mr-2 d-none d-lg-inline text-gray-600 small">Ahmed Khaled</span>
-                                <img class="img-profile rounded-circle"
-                                    src="assets/imgs/undraw_profile.svg">
+                                <img class="img-profile rounded-circle" src="assets/imgs/undraw_profile.svg">
                             </a>
                             <!-- Dropdown - User Information -->
                             <div class="dropdown-menu dropdown-menu-right shadow animated--grow-in"
@@ -306,10 +315,10 @@
                                     <i class="fas fa-user fa-sm fa-fw mr-2 text-gray-400"></i>
                                     Profile
                                 </a>
-                                <a class="dropdown-item" href="#">
+                                <!-- <a class="dropdown-item" href="#">
                                     <i class="fas fa-cogs fa-sm fa-fw mr-2 text-gray-400"></i>
                                     Settings
-                                </a>
+                                </a> -->
                                 <div class="dropdown-divider"></div>
                                 <a class="dropdown-item" href="#" data-toggle="modal" data-target="#logoutModal">
                                     <i class="fas fa-sign-out-alt fa-sm fa-fw mr-2 text-gray-400"></i>
@@ -427,6 +436,317 @@
 
                     </div>
 
+                    <div class="row">
+
+                        <!-- Latest uploaded Subjects   -->
+                        <div class="col-md-6 mb-5">
+                            <h5 class="text-primary mt-3 font-weight-bold">Latest uploaded Subjects </h5>
+                            <div class="card border-top-primary shadow p-2">
+                                <div class="table-responsive">
+                                    <table class="table table-bordered" id="LatestSubjects" width="100%"
+                                        cellspacing="0">
+                                        <thead>
+                                            <tr>
+                                                <th>File name</th>
+                                                <th>Uploader</th>
+                                                <th>Date</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td>File A</td>
+                                                <td>Dr. Ahmed</td>
+                                                <td>01 July 2023</td>
+                                            </tr>
+
+                                            <tr>
+                                                <td>File B</td>
+                                                <td>Dr. Mahmoud</td>
+                                                <td>02 July 2023</td>
+                                            </tr>
+
+                                            <tr>
+                                                <td>File C</td>
+                                                <td>Dr. Sami</td>
+                                                <td>03 July 2023</td>
+
+                                            </tr>
+
+                                            <tr>
+                                                <td>File R</td>
+                                                <td>Dr. Yasser</td>
+                                                <td>18 July 2023</td>
+
+                                            </tr>
+
+                                            <tr>
+                                                <td>File S</td>
+                                                <td>Dr. Khaled</td>
+                                                <td>19 July 2023</td>
+                                            </tr>
+
+                                            <tr>
+                                                <td>File T</td>
+                                                <td>Dr. Tariq</td>
+                                                <td>20 July 2023</td>
+
+                                            </tr>
+
+                                        </tbody>
+                                    </table>
+                                </div>
+                                <a href="subject.html" class="btn btn-primary mt-2">See All</a>
+                            </div>
+                        </div>
+
+                        <!-- Latest News   -->
+                        <div class="col-md-6 mb-5">
+                            <h5 class="text-danger mt-3 font-weight-bold">Latest News </h5>
+                            <div class="card border-top-danger shadow p-2">
+                                <div class="owl-carousel owl-theme">
+                                    <div class="item">
+                                        <div class="card border-0 mb-3 pr-3">
+                                            <div class="row align-items-center">
+                                                <div class="col-md-4">
+                                                    <img src="assets/imgs/hero.webp" class="card-img"
+                                                        alt="news picture">
+                                                </div>
+                                                <div class="col-md-8">
+                                                    <div class="card-body">
+                                                        <h5 class="card-title mb-1"><a href="single-news.html"
+                                                                class="font-weight-bold text-danger">Lorem
+                                                                ipsum dolor sit amet consectetur.
+                                                            </a></h5>
+                                                        <p class="card-text"><small class="text-gray-800">1 January
+                                                                2024</small></p>
+                                                        <p class="card-text">Lorem ipsum dolor sit amet consectetur...
+                                                            <small><a href="single-news.html" class="text-success">Read
+                                                                    More</a></small>
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="item">
+                                        <div class="card border-0 mb-3 pr-3">
+                                            <div class="row align-items-center">
+                                                <div class="col-md-4">
+                                                    <img src="assets/imgs/hero.webp" class="card-img"
+                                                        alt="news picture">
+                                                </div>
+                                                <div class="col-md-8">
+                                                    <div class="card-body">
+                                                        <h5 class="card-title mb-1"><a href="single-news.html"
+                                                                class="font-weight-bold text-danger">Lorem
+                                                                ipsum dolor sit amet consectetur.
+                                                            </a></h5>
+                                                        <p class="card-text"><small class="text-gray-800">1 January
+                                                                2024</small></p>
+                                                        <p class="card-text">Lorem ipsum dolor sit amet consectetur...
+                                                            <small><a href="single-news.html" class="text-success">Read
+                                                                    More</a></small>
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="item">
+                                        <div class="card border-0 mb-3 pr-3">
+                                            <div class="row align-items-center">
+                                                <div class="col-md-4">
+                                                    <img src="assets/imgs/hero.webp" class="card-img"
+                                                        alt="news picture">
+                                                </div>
+                                                <div class="col-md-8">
+                                                    <div class="card-body">
+                                                        <h5 class="card-title mb-1"><a href="single-news.html"
+                                                                class="font-weight-bold text-danger">Lorem
+                                                                ipsum dolor sit amet consectetur.
+                                                            </a></h5>
+                                                        <p class="card-text"><small class="text-gray-800">1 January
+                                                                2024</small></p>
+                                                        <p class="card-text">Lorem ipsum dolor sit amet consectetur...
+                                                            <small><a href="single-news.html" class="text-success">Read
+                                                                    More</a></small>
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <a href="news.html" class="btn btn-danger mt-2">See All</a>
+                            </div>
+                        </div>
+                        <!-- Latest Events  -->
+                        <div class="col-md-6 mb-5">
+                            <h5 class="text-info mt-3 font-weight-bold">Latest Events </h5>
+                            <div class="card border-top-info shadow p-2">
+                                <div class="owl-carousel owl-theme">
+                                    <div class="item">
+                                        <div class="card border-0 mb-3 pr-3">
+                                            <div class="row align-items-center">
+                                                <div class="col-md-4">
+                                                    <img src="assets/imgs/hero.webp" class="card-img"
+                                                        alt="news picture">
+                                                </div>
+                                                <div class="col-md-8">
+                                                    <div class="card-body">
+                                                        <h5 class="card-title mb-1"><a href="single-events.html"
+                                                                class="font-weight-bold text-info">Lorem
+                                                                ipsum dolor sit amet consectetur.
+                                                            </a></h5>
+                                                        <p class="card-text"><small class="text-gray-800">1 January
+                                                                2024</small></p>
+                                                        <p class="card-text">Lorem ipsum dolor sit amet consectetur...
+                                                            <small><a href="single-events.html"
+                                                                    class="text-success">Read
+                                                                    More</a></small>
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="item">
+                                        <div class="card border-0 mb-3 pr-3">
+                                            <div class="row align-items-center">
+                                                <div class="col-md-4">
+                                                    <img src="assets/imgs/hero.webp" class="card-img"
+                                                        alt="news picture">
+                                                </div>
+                                                <div class="col-md-8">
+                                                    <div class="card-body">
+                                                        <h5 class="card-title mb-1"><a href="single-events.html"
+                                                                class="font-weight-bold text-info">Lorem
+                                                                ipsum dolor sit amet consectetur.
+                                                            </a></h5>
+                                                        <p class="card-text"><small class="text-gray-800">1 January
+                                                                2024</small></p>
+                                                        <p class="card-text">Lorem ipsum dolor sit amet consectetur...
+                                                            <small><a href="single-events.html"
+                                                                    class="text-success">Read
+                                                                    More</a></small>
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="item">
+                                        <div class="card border-0 mb-3 pr-3">
+                                            <div class="row align-items-center">
+                                                <div class="col-md-4">
+                                                    <img src="assets/imgs/hero.webp" class="card-img"
+                                                        alt="news picture">
+                                                </div>
+                                                <div class="col-md-8">
+                                                    <div class="card-body">
+                                                        <h5 class="card-title mb-1"><a href="single-events.html"
+                                                                class="font-weight-bold text-info">Lorem
+                                                                ipsum dolor sit amet consectetur.
+                                                            </a></h5>
+                                                        <p class="card-text"><small class="text-gray-800">1 January
+                                                                2024</small></p>
+                                                        <p class="card-text">Lorem ipsum dolor sit amet consectetur...
+                                                            <small><a href="single-events.html"
+                                                                    class="text-success">Read
+                                                                    More</a></small>
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <a href="events.html" class="btn btn-info mt-2">See All</a>
+                            </div>
+                        </div>
+                        <!-- Latest Posts  -->
+                        <div class="col-md-6 mb-5">
+                            <h5 class="text-warning mt-3 font-weight-bold">Latest Posts </h5>
+                            <div class="card border-top-warning shadow p-2">
+                                <div class="owl-carousel owl-theme">
+                                    <div class="item">
+                                        <div class="card border-0 mb-3 pr-3">
+                                            <div class="row align-items-center">
+                                                <div class="col-md-4">
+                                                    <img src="assets/imgs/hero.webp" class="card-img"
+                                                        alt="news picture">
+                                                </div>
+                                                <div class="col-md-8">
+                                                    <div class="card-body">
+                                                        <h5 class="card-title mb-1"><a href="post-details.html"
+                                                                class="font-weight-bold text-warning">Lorem
+                                                                ipsum dolor sit amet consectetur.
+                                                            </a></h5>
+                                                        <p class="card-text"><small class="text-gray-800">1 January
+                                                                2024</small></p>
+                                                        <p class="card-text">Lorem ipsum dolor sit amet consectetur...
+                                                            <small><a href="post-details.html" class="text-success">Read
+                                                                    More</a></small>
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="item">
+                                        <div class="card border-0 mb-3 pr-3">
+                                            <div class="row align-items-center">
+                                                <div class="col-md-4">
+                                                    <img src="assets/imgs/hero.webp" class="card-img"
+                                                        alt="news picture">
+                                                </div>
+                                                <div class="col-md-8">
+                                                    <div class="card-body">
+                                                        <h5 class="card-title mb-1"><a href="post-details.html"
+                                                                class="font-weight-bold text-warning">Lorem
+                                                                ipsum dolor sit amet consectetur.
+                                                            </a></h5>
+                                                        <p class="card-text"><small class="text-gray-800">1 January
+                                                                2024</small></p>
+                                                        <p class="card-text">Lorem ipsum dolor sit amet consectetur...
+                                                            <small><a href="post-details.html" class="text-success">Read
+                                                                    More</a></small>
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="item">
+                                        <div class="card border-0 mb-3 pr-3">
+                                            <div class="row align-items-center">
+                                                <div class="col-md-4">
+                                                    <img src="assets/imgs/hero.webp" class="card-img"
+                                                        alt="news picture">
+                                                </div>
+                                                <div class="col-md-8">
+                                                    <div class="card-body">
+                                                        <h5 class="card-title mb-1"><a href="post-details.html"
+                                                                class="font-weight-bold text-warning">Lorem
+                                                                ipsum dolor sit amet consectetur.
+                                                            </a></h5>
+                                                        <p class="card-text"><small class="text-gray-800">1 January
+                                                                2024</small></p>
+                                                        <p class="card-text">Lorem ipsum dolor sit amet consectetur...
+                                                            <small><a href="post-details.html" class="text-success">Read
+                                                                    More</a></small>
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <a href="posts.html" class="btn btn-warning mt-2">See All</a>
+                            </div>
+                        </div>
+
+                    </div>
 
 
                 </div>
@@ -439,7 +759,8 @@
             <footer class="sticky-footer bg-white">
                 <div class="container my-auto">
                     <div class="copyright text-center my-auto">
-                        <span>Copyright &copy; Game3y 2021</span>
+                        <span>© 2023 Game3y All Rights Reserved. created by <a href="motawreen.com">Motawreen
+                                Team.</a></span>
                     </div>
                 </div>
             </footer>
@@ -485,6 +806,13 @@
 
     <!-- Custom scripts for all pages-->
     <script src="assets/js/sb-admin-2.min.js"></script>
+
+    <!-- <script src="assets/vendor/datatables/jquery.dataTables.min.js"></script> -->
+    <script src="assets/vendor/datatables/jquery.dataTables.js"></script>
+    <script src="assets/vendor/datatables/dataTables.bootstrap4.min.js"></script>
+
+    <!-- owl carousel -->
+    <script src="assets/js/owl.carousel.min.js"></script>
 
     <script src="assets/js/dashboard.js"></script>
 

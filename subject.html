@@ -11,15 +11,15 @@
 
     <title>Game3y - Subject</title>
 
-     <!-- Custom fonts for this template-->
-     <link href="assets/vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
+    <!-- Custom fonts for this template-->
+    <link href="assets/vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
 
-     <!-- Custom styles for this template-->
-     <link href="assets/scss/sb-admin-2.css" rel="stylesheet">
+    <!-- Custom styles for this template-->
+    <link href="assets/scss/sb-admin-2.css" rel="stylesheet">
 
     <!-- Custom styles for this page -->
     <link href="assets/vendor/datatables/dataTables.bootstrap4.min.css" rel="stylesheet">
-    
+
     <!-- favicon -->
     <link rel="apple-touch-icon" sizes="180x180" href="assets/favicon/">
     <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon/favicon-32x32.png">
@@ -32,8 +32,8 @@
     <!-- Page Wrapper -->
     <div id="wrapper">
 
-           <!-- Sidebar -->
-           <ul class="navbar-nav bg-gradient-primary sidebar sidebar-dark accordion" id="accordionSidebar">
+        <!-- Sidebar -->
+        <ul class="navbar-nav bg-gradient-primary sidebar sidebar-dark accordion" id="accordionSidebar">
 
             <!-- Sidebar - Brand -->
             <a class="sidebar-brand d-flex align-items-center justify-content-center" href="index.html">
@@ -83,17 +83,24 @@
             </li>
 
             <!-- Nav Item - Tables -->
-            <li class="nav-item">
+            <li class="nav-item ">
                 <a class="nav-link" href="news.html">
                     <i class="fas fa-fw fa-newspaper"></i>
                     <span>News</span></a>
             </li>
 
             <!-- Nav Item - Tables -->
+            <li class="nav-item ">
+                <a class="nav-link" href="events.html">
+                    <i class="fas fa-fw fa-calendar-day"></i>
+                    <span>Events</span></a>
+            </li>
+
+            <!-- Nav Item - Tables -->
             <li class="nav-item">
                 <a class="nav-link" href="suggestions.html">
                     <i class="fas fa-fw fa-paper-plane"></i>
-                    <span>Suggestions</span></a>
+                    <span>Suggestions / Claims</span></a>
             </li>
 
             <!-- Nav Item - Tables -->
@@ -242,8 +249,7 @@
                                 </h6>
                                 <a class="dropdown-item d-flex align-items-center" href="#">
                                     <div class="dropdown-list-image mr-3">
-                                        <img class="rounded-circle" src="assets/imgs/undraw_profile_1.svg"
-                                            alt="...">
+                                        <img class="rounded-circle" src="assets/imgs/undraw_profile_1.svg" alt="...">
                                         <div class="status-indicator bg-success"></div>
                                     </div>
                                     <div class="font-weight-bold">
@@ -254,8 +260,7 @@
                                 </a>
                                 <a class="dropdown-item d-flex align-items-center" href="#">
                                     <div class="dropdown-list-image mr-3">
-                                        <img class="rounded-circle" src="assets/imgs/undraw_profile_2.svg"
-                                            alt="...">
+                                        <img class="rounded-circle" src="assets/imgs/undraw_profile_2.svg" alt="...">
                                         <div class="status-indicator"></div>
                                     </div>
                                     <div>
@@ -266,8 +271,7 @@
                                 </a>
                                 <a class="dropdown-item d-flex align-items-center" href="#">
                                     <div class="dropdown-list-image mr-3">
-                                        <img class="rounded-circle" src="assets/imgs/undraw_profile_3.svg"
-                                            alt="...">
+                                        <img class="rounded-circle" src="assets/imgs/undraw_profile_3.svg" alt="...">
                                         <div class="status-indicator bg-warning"></div>
                                     </div>
                                     <div>
@@ -299,8 +303,7 @@
                             <a class="nav-link dropdown-toggle" href="#" id="userDropdown" role="button"
                                 data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                 <span class="mr-2 d-none d-lg-inline text-gray-600 small">Ahmed Khaled</span>
-                                <img class="img-profile rounded-circle"
-                                    src="assets/imgs/undraw_profile.svg">
+                                <img class="img-profile rounded-circle" src="assets/imgs/undraw_profile.svg">
                             </a>
                             <!-- Dropdown - User Information -->
                             <div class="dropdown-menu dropdown-menu-right shadow animated--grow-in"
@@ -309,10 +312,10 @@
                                     <i class="fas fa-user fa-sm fa-fw mr-2 text-gray-400"></i>
                                     Profile
                                 </a>
-                                <a class="dropdown-item" href="#">
+                                <!-- <a class="dropdown-item" href="#">
                                     <i class="fas fa-cogs fa-sm fa-fw mr-2 text-gray-400"></i>
                                     Settings
-                                </a>
+                                </a> -->
                                 <div class="dropdown-divider"></div>
                                 <a class="dropdown-item" href="#" data-toggle="modal" data-target="#logoutModal">
                                     <i class="fas fa-sign-out-alt fa-sm fa-fw mr-2 text-gray-400"></i>
@@ -326,7 +329,826 @@
                 </nav>
                 <!-- End of Topbar -->
 
-                
+                <!-- page content -->
+                <div class="container subject-page">
+                    <div>
+                        <nav>
+                            <div class="nav nav-tabs justify-content-center" id="nav-tab" role="tablist">
+                                <a class="card mr-5 h-100 py-2 nav-link active" id="nav-HeatTransfer-tab"
+                                    data-toggle="tab" href="#nav-HeatTransfer" role="tab" aria-controls="nav-profile"
+                                    aria-selected="false">
+                                    <div class="card-body">
+                                        <div class="row no-gutters align-items-center">
+                                            <div class="col-auto mr-3">
+                                                <img src="assets/imgs/subject.svg" alt="subject icon">
+                                            </div>
+                                            <div class="col mr-2">
+                                                <div class="font-weight-bold text-primary text-uppercase mb-1">
+                                                    Heat Transfer</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                                <a class="card mr-5 h-100 py-2 nav-link" id="nav-Design-tab" data-toggle="tab"
+                                    href="#nav-Design" role="tab" aria-controls="nav-profile" aria-selected="false">
+                                    <div class="card-body">
+                                        <div class="row no-gutters align-items-center">
+                                            <div class="col-auto mr-3">
+                                                <img src="assets/imgs/subject.svg" alt="subject icon">
+                                            </div>
+                                            <div class="col mr-2">
+                                                <div class="font-weight-bold text-primary text-uppercase mb-1">
+                                                    Design</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                        </nav>
+                        <div class="tab-content pr-3 pl-3" id="nav-tab-content-all-subjects">
+                            <div class="tab-pane fade show active pt-4" id="nav-HeatTransfer" role="tabpanel"
+                                aria-labelledby="nav-HeatTransfer-tab">
+                                <!-- Pane 1 -->
+                                <div class="HeatTransfer">
+                                    <nav>
+                                        <div class="nav nav-tabs justify-content-center" id="nav-tab" role="tablist">
+                                            <a class="nav-link active" id="nav-Summary-tab-HeatTransfer"
+                                                data-toggle="tab" href="#nav-Summary" role="tab"
+                                                aria-controls="nav-profile" aria-selected="false">Summary</a>
+                                            <a class="nav-link" id="nav-Exam-tab-HeatTransfer" data-toggle="tab"
+                                                href="#nav-Exam" role="tab" aria-controls="nav-profile"
+                                                aria-selected="false">Exam</a>
+                                            <a class="nav-link" id="nav-Sheets-tab-HeatTransfer" data-toggle="tab"
+                                                href="#nav-Sheets" role="tab" aria-controls="nav-profile"
+                                                aria-selected="false">Sheets</a>
+                                        </div>
+                                    </nav>
+                                    <div class="tab-content pr-3 pl-3" id="nav-tab-content-HeatTransfer">
+                                        <div class="tab-pane fade show active pt-4" id="nav-Summary" role="tabpanel"
+                                            aria-labelledby="nav-Summary-tab-HeatTransfer">
+                                            <!-- Pane 1 -->
+                                            <div class="Summary">
+                                                <div class="card shadow mb-4">
+                                                    <div class="card-header py-3">
+                                                        <h6 class="m-0 font-weight-bold text-primary">Heat Transfer
+                                                            Summaries 2023
+                                                        </h6>
+                                                    </div>
+                                                    <div class="card-body">
+                                                        <div class="table-responsive">
+                                                            <table class="table table-bordered" id="dataTable2"
+                                                                width="100%" cellspacing="0">
+                                                                <thead>
+                                                                    <tr>
+                                                                        <th>File name</th>
+                                                                        <th>File type</th>
+                                                                        <th>Uploader</th>
+                                                                        <th>Date</th>
+                                                                        <th>Actions</th>
+
+                                                                    </tr>
+                                                                </thead>
+                                                                <tfoot>
+                                                                    <tr>
+                                                                        <th>File name</th>
+                                                                        <th>File type</th>
+                                                                        <th>Uploader</th>
+                                                                        <th>Date</th>
+                                                                        <th>Actions</th>
+
+                                                                    </tr>
+                                                                </tfoot>
+                                                                <tbody>
+                                                                    <tr>
+                                                                        <td>File A</td>
+                                                                        <td>PDF</td>
+                                                                        <td>Dr. Ahmed</td>
+                                                                        <td>01 July 2021</td>
+                                                                        <td>
+                                                                            <a href="#" title="Read"><i
+                                                                                    class="fas fa-book-open fa-1x fa-fw mr-2 text-primary"></i></a>
+                                                                            <a href="#" title="Download"><i
+                                                                                    class="fas fa-download fa-1x fa-fw mr-2 text-primary"></i></a>
+                                                                        </td>
+                                                                    </tr>
+
+                                                                    <tr>
+                                                                        <td>File B</td>
+                                                                        <td>DOCX</td>
+                                                                        <td>Dr. Mahmoud</td>
+                                                                        <td>02 July 2022</td>
+                                                                        <td>
+                                                                            <a href="#" title="Read"><i
+                                                                                    class="fas fa-book-open fa-1x fa-fw mr-2 text-primary"></i></a>
+                                                                            <a href="#" title="Download"><i
+                                                                                    class="fas fa-download fa-1x fa-fw mr-2 text-primary"></i></a>
+                                                                        </td>
+                                                                    </tr>
+
+                                                                    <tr>
+                                                                        <td>File C</td>
+                                                                        <td>PPT</td>
+                                                                        <td>Dr. Sami</td>
+                                                                        <td>03 July 2020</td>
+                                                                        <td>
+                                                                            <a href="#" title="Read"><i
+                                                                                    class="fas fa-book-open fa-1x fa-fw mr-2 text-primary"></i></a>
+                                                                            <a href="#" title="Download"><i
+                                                                                    class="fas fa-download fa-1x fa-fw mr-2 text-primary"></i></a>
+                                                                        </td>
+                                                                    </tr>
+
+                                                                    <!-- ... Repeated for the sake of brevity ... -->
+
+                                                                    <tr>
+                                                                        <td>File R</td>
+                                                                        <td>EXCEL</td>
+                                                                        <td>Dr. Yasser</td>
+                                                                        <td>18 July 2021</td>
+                                                                        <td>
+                                                                            <a href="#" title="Read"><i
+                                                                                    class="fas fa-book-open fa-1x fa-fw mr-2 text-primary"></i></a>
+                                                                            <a href="#" title="Download"><i
+                                                                                    class="fas fa-download fa-1x fa-fw mr-2 text-primary"></i></a>
+                                                                        </td>
+                                                                    </tr>
+
+                                                                    <tr>
+                                                                        <td>File S</td>
+                                                                        <td>HTML</td>
+                                                                        <td>Dr. Khaled</td>
+                                                                        <td>19 July 2021</td>
+                                                                        <td>
+                                                                            <a href="#" title="Read"><i
+                                                                                    class="fas fa-book-open fa-1x fa-fw mr-2 text-primary"></i></a>
+                                                                            <a href="#" title="Download"><i
+                                                                                    class="fas fa-download fa-1x fa-fw mr-2 text-primary"></i></a>
+                                                                        </td>
+                                                                    </tr>
+
+                                                                    <tr>
+                                                                        <td>File T</td>
+                                                                        <td>ZIP</td>
+                                                                        <td>Dr. Tariq</td>
+                                                                        <td>20 July 2020</td>
+                                                                        <td>
+                                                                            <a href="#" title="Read"><i
+                                                                                    class="fas fa-book-open fa-1x fa-fw mr-2 text-primary"></i></a>
+                                                                            <a href="#" title="Download"><i
+                                                                                    class="fas fa-download fa-1x fa-fw mr-2 text-primary"></i></a>
+                                                                        </td>
+                                                                    </tr>
+
+                                                                </tbody>
+                                                            </table>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <!-- end pane 1 -->
+                                        </div>
+                                        <div class="tab-pane fade pt-4" id="nav-Exam" role="tabpanel"
+                                            aria-labelledby="nav-Exam-tab-HeatTransfer">
+                                            <!-- Pane 2 -->
+                                            <div class="Exam">
+                                                <div class="card shadow mb-4">
+                                                    <div class="card-header py-3">
+                                                        <h6 class="m-0 font-weight-bold text-primary">Heat Transfer
+                                                            Exams 2023
+                                                        </h6>
+                                                    </div>
+                                                    <div class="card-body">
+                                                        <div class="table-responsive">
+                                                            <table class="table table-bordered" id="dataTable3"
+                                                                width="100%" cellspacing="0">
+                                                                <thead>
+                                                                    <tr>
+                                                                        <th>File name</th>
+                                                                        <th>File type</th>
+                                                                        <th>Uploader</th>
+                                                                        <th>Date</th>
+                                                                        <th>Actions</th>
+
+                                                                    </tr>
+                                                                </thead>
+                                                                <tfoot>
+                                                                    <tr>
+                                                                        <th>File name</th>
+                                                                        <th>File type</th>
+                                                                        <th>Uploader</th>
+                                                                        <th>Date</th>
+                                                                        <th>Actions</th>
+
+                                                                    </tr>
+                                                                </tfoot>
+                                                                <tbody>
+                                                                    <tr>
+                                                                        <td>File A</td>
+                                                                        <td>PDF</td>
+                                                                        <td>Dr. Ahmed</td>
+                                                                        <td>01 July 2022</td>
+                                                                        <td>
+                                                                            <a href="#" title="Read"><i
+                                                                                    class="fas fa-book-open fa-1x fa-fw mr-2 text-primary"></i></a>
+                                                                            <a href="#" title="Download"><i
+                                                                                    class="fas fa-download fa-1x fa-fw mr-2 text-primary"></i></a>
+                                                                        </td>
+                                                                    </tr>
+
+                                                                    <tr>
+                                                                        <td>File B</td>
+                                                                        <td>DOCX</td>
+                                                                        <td>Dr. Mahmoud</td>
+                                                                        <td>02 July 2021</td>
+                                                                        <td>
+                                                                            <a href="#" title="Read"><i
+                                                                                    class="fas fa-book-open fa-1x fa-fw mr-2 text-primary"></i></a>
+                                                                            <a href="#" title="Download"><i
+                                                                                    class="fas fa-download fa-1x fa-fw mr-2 text-primary"></i></a>
+                                                                        </td>
+                                                                    </tr>
+
+                                                                    <tr>
+                                                                        <td>File C</td>
+                                                                        <td>PPT</td>
+                                                                        <td>Dr. Sami</td>
+                                                                        <td>03 July 2021</td>
+                                                                        <td>
+                                                                            <a href="#" title="Read"><i
+                                                                                    class="fas fa-book-open fa-1x fa-fw mr-2 text-primary"></i></a>
+                                                                            <a href="#" title="Download"><i
+                                                                                    class="fas fa-download fa-1x fa-fw mr-2 text-primary"></i></a>
+                                                                        </td>
+                                                                    </tr>
+
+                                                                    <!-- ... Repeated for the sake of brevity ... -->
+
+                                                                    <tr>
+                                                                        <td>File R</td>
+                                                                        <td>EXCEL</td>
+                                                                        <td>Dr. Yasser</td>
+                                                                        <td>18 July 2021</td>
+                                                                        <td>
+                                                                            <a href="#" title="Read"><i
+                                                                                    class="fas fa-book-open fa-1x fa-fw mr-2 text-primary"></i></a>
+                                                                            <a href="#" title="Download"><i
+                                                                                    class="fas fa-download fa-1x fa-fw mr-2 text-primary"></i></a>
+                                                                        </td>
+                                                                    </tr>
+
+                                                                    <tr>
+                                                                        <td>File S</td>
+                                                                        <td>HTML</td>
+                                                                        <td>Dr. Khaled</td>
+                                                                        <td>19 July 2021</td>
+                                                                        <td>
+                                                                            <a href="#" title="Read"><i
+                                                                                    class="fas fa-book-open fa-1x fa-fw mr-2 text-primary"></i></a>
+                                                                            <a href="#" title="Download"><i
+                                                                                    class="fas fa-download fa-1x fa-fw mr-2 text-primary"></i></a>
+                                                                        </td>
+                                                                    </tr>
+
+                                                                    <tr>
+                                                                        <td>File T</td>
+                                                                        <td>ZIP</td>
+                                                                        <td>Dr. Tariq</td>
+                                                                        <td>20 July 2021</td>
+                                                                        <td>
+                                                                            <a href="#" title="Read"><i
+                                                                                    class="fas fa-book-open fa-1x fa-fw mr-2 text-primary"></i></a>
+                                                                            <a href="#" title="Download"><i
+                                                                                    class="fas fa-download fa-1x fa-fw mr-2 text-primary"></i></a>
+                                                                        </td>
+                                                                    </tr>
+
+                                                                </tbody>
+                                                            </table>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <!-- end pane 2 -->
+                                        </div>
+                                        <div class="tab-pane fade pt-4" id="nav-Sheets" role="tabpanel"
+                                            aria-labelledby="nav-Sheets-tab-HeatTransfer">
+                                            <!-- Pane 3 -->
+                                            <div class="Sheets">
+                                                <div class="card shadow mb-4">
+                                                    <div class="card-header py-3">
+                                                        <h6 class="m-0 font-weight-bold text-primary">Heat Transfer
+                                                            Sheets 2023
+                                                        </h6>
+                                                    </div>
+                                                    <div class="card-body">
+                                                        <div class="table-responsive">
+                                                            <table class="table table-bordered" id="dataTable4"
+                                                                width="100%" cellspacing="0">
+                                                                <thead>
+                                                                    <tr>
+                                                                        <th>File name</th>
+                                                                        <th>File type</th>
+                                                                        <th>Uploader</th>
+                                                                        <th>Date</th>
+                                                                        <th>Actions</th>
+
+                                                                    </tr>
+                                                                </thead>
+                                                                <tfoot>
+                                                                    <tr>
+                                                                        <th>File name</th>
+                                                                        <th>File type</th>
+                                                                        <th>Uploader</th>
+                                                                        <th>Date</th>
+                                                                        <th>Actions</th>
+
+                                                                    </tr>
+                                                                </tfoot>
+                                                                <tbody>
+                                                                    <tr>
+                                                                        <td>File A</td>
+                                                                        <td>PDF</td>
+                                                                        <td>Dr. Ahmed</td>
+                                                                        <td>01 July 2022</td>
+                                                                        <td>
+                                                                            <a href="#" title="Read"><i
+                                                                                    class="fas fa-book-open fa-1x fa-fw mr-2 text-primary"></i></a>
+                                                                            <a href="#" title="Download"><i
+                                                                                    class="fas fa-download fa-1x fa-fw mr-2 text-primary"></i></a>
+                                                                        </td>
+                                                                    </tr>
+
+                                                                    <tr>
+                                                                        <td>File B</td>
+                                                                        <td>DOCX</td>
+                                                                        <td>Dr. Mahmoud</td>
+                                                                        <td>02 July 2020</td>
+                                                                        <td>
+                                                                            <a href="#" title="Read"><i
+                                                                                    class="fas fa-book-open fa-1x fa-fw mr-2 text-primary"></i></a>
+                                                                            <a href="#" title="Download"><i
+                                                                                    class="fas fa-download fa-1x fa-fw mr-2 text-primary"></i></a>
+                                                                        </td>
+                                                                    </tr>
+
+                                                                    <tr>
+                                                                        <td>File C</td>
+                                                                        <td>PPT</td>
+                                                                        <td>Dr. Sami</td>
+                                                                        <td>03 July 2020</td>
+                                                                        <td>
+                                                                            <a href="#" title="Read"><i
+                                                                                    class="fas fa-book-open fa-1x fa-fw mr-2 text-primary"></i></a>
+                                                                            <a href="#" title="Download"><i
+                                                                                    class="fas fa-download fa-1x fa-fw mr-2 text-primary"></i></a>
+                                                                        </td>
+                                                                    </tr>
+
+                                                                    <!-- ... Repeated for the sake of brevity ... -->
+
+                                                                    <tr>
+                                                                        <td>File R</td>
+                                                                        <td>EXCEL</td>
+                                                                        <td>Dr. Yasser</td>
+                                                                        <td>18 July 2022</td>
+                                                                        <td>
+                                                                            <a href="#" title="Read"><i
+                                                                                    class="fas fa-book-open fa-1x fa-fw mr-2 text-primary"></i></a>
+                                                                            <a href="#" title="Download"><i
+                                                                                    class="fas fa-download fa-1x fa-fw mr-2 text-primary"></i></a>
+                                                                        </td>
+                                                                    </tr>
+
+                                                                    <tr>
+                                                                        <td>File S</td>
+                                                                        <td>HTML</td>
+                                                                        <td>Dr. Khaled</td>
+                                                                        <td>19 July 2022</td>
+                                                                        <td>
+                                                                            <a href="#" title="Read"><i
+                                                                                    class="fas fa-book-open fa-1x fa-fw mr-2 text-primary"></i></a>
+                                                                            <a href="#" title="Download"><i
+                                                                                    class="fas fa-download fa-1x fa-fw mr-2 text-primary"></i></a>
+                                                                        </td>
+                                                                    </tr>
+
+                                                                    <tr>
+                                                                        <td>File T</td>
+                                                                        <td>ZIP</td>
+                                                                        <td>Dr. Tariq</td>
+                                                                        <td>20 July 2020</td>
+                                                                        <td>
+                                                                            <a href="#" title="Read"><i
+                                                                                    class="fas fa-book-open fa-1x fa-fw mr-2 text-primary"></i></a>
+                                                                            <a href="#" title="Download"><i
+                                                                                    class="fas fa-download fa-1x fa-fw mr-2 text-primary"></i></a>
+                                                                        </td>
+                                                                    </tr>
+
+                                                                </tbody>
+                                                            </table>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <!-- end pane 3 -->
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- end pane 1 -->
+                            </div>
+                            <div class="tab-pane fade pt-4" id="nav-Design" role="tabpanel"
+                                aria-labelledby="nav-Design-tab">
+                                <!-- Pane 2 -->
+                                <div class="Design">
+                                    <nav>
+                                        <div class="nav nav-tabs justify-content-center" id="nav-tab" role="tablist">
+                                            <a class="nav-link active" id="nav-Summary-tab-Design" data-toggle="tab"
+                                                href="#nav-Summary-Design" role="tab" aria-controls="nav-profile"
+                                                aria-selected="false">Summary</a>
+                                            <a class="nav-link" id="nav-Exam-tab-Design" data-toggle="tab"
+                                                href="#nav-Exam-Design" role="tab" aria-controls="nav-profile"
+                                                aria-selected="false">Exam</a>
+                                            <a class="nav-link" id="nav-Sheets-tab-Design" data-toggle="tab"
+                                                href="#nav-Sheets-Design" role="tab" aria-controls="nav-profile"
+                                                aria-selected="false">Sheets</a>
+                                        </div>
+                                    </nav>
+                                    <div class="tab-content pr-3 pl-3" id="nav-tab-content-Design">
+                                        <div class="tab-pane fade show active pt-4" id="nav-Summary-Design"
+                                            role="tabpanel" aria-labelledby="nav-Summary-tab-Design">
+                                            <!-- Pane 1 -->
+                                            <div class="Summary">
+                                                <div class="card shadow mb-4">
+                                                    <div class="card-header py-3">
+                                                        <h6 class="m-0 font-weight-bold text-primary">Design Summaries
+                                                            2023
+                                                        </h6>
+                                                    </div>
+                                                    <div class="card-body">
+                                                        <div class="table-responsive">
+                                                            <table class="table table-bordered" id="dataTable5"
+                                                                width="100%" cellspacing="0">
+                                                                <thead>
+                                                                    <tr>
+                                                                        <th>File name</th>
+                                                                        <th>File type</th>
+                                                                        <th>Uploader</th>
+                                                                        <th>Date</th>
+                                                                        <th>Actions</th>
+
+                                                                    </tr>
+                                                                </thead>
+                                                                <tfoot>
+                                                                    <tr>
+                                                                        <th>File name</th>
+                                                                        <th>File type</th>
+                                                                        <th>Uploader</th>
+                                                                        <th>Date</th>
+                                                                        <th>Actions</th>
+
+                                                                    </tr>
+                                                                </tfoot>
+                                                                <tbody>
+                                                                    <tr>
+                                                                        <td>File A</td>
+                                                                        <td>PDF</td>
+                                                                        <td>Dr. Ahmed</td>
+                                                                        <td>01 July 2021</td>
+                                                                        <td>
+                                                                            <a href="#" title="Read"><i
+                                                                                    class="fas fa-book-open fa-1x fa-fw mr-2 text-primary"></i></a>
+                                                                            <a href="#" title="Download"><i
+                                                                                    class="fas fa-download fa-1x fa-fw mr-2 text-primary"></i></a>
+                                                                        </td>
+                                                                    </tr>
+
+                                                                    <tr>
+                                                                        <td>File B</td>
+                                                                        <td>DOCX</td>
+                                                                        <td>Dr. Mahmoud</td>
+                                                                        <td>02 July 2021</td>
+                                                                        <td>
+                                                                            <a href="#" title="Read"><i
+                                                                                    class="fas fa-book-open fa-1x fa-fw mr-2 text-primary"></i></a>
+                                                                            <a href="#" title="Download"><i
+                                                                                    class="fas fa-download fa-1x fa-fw mr-2 text-primary"></i></a>
+                                                                        </td>
+                                                                    </tr>
+
+                                                                    <tr>
+                                                                        <td>File C</td>
+                                                                        <td>PPT</td>
+                                                                        <td>Dr. Sami</td>
+                                                                        <td>03 July 2021</td>
+                                                                        <td>
+                                                                            <a href="#" title="Read"><i
+                                                                                    class="fas fa-book-open fa-1x fa-fw mr-2 text-primary"></i></a>
+                                                                            <a href="#" title="Download"><i
+                                                                                    class="fas fa-download fa-1x fa-fw mr-2 text-primary"></i></a>
+                                                                        </td>
+                                                                    </tr>
+
+                                                                    <!-- ... Repeated for the sake of brevity ... -->
+
+                                                                    <tr>
+                                                                        <td>File R</td>
+                                                                        <td>EXCEL</td>
+                                                                        <td>Dr. Yasser</td>
+                                                                        <td>18 July 2021</td>
+                                                                        <td>
+                                                                            <a href="#" title="Read"><i
+                                                                                    class="fas fa-book-open fa-1x fa-fw mr-2 text-primary"></i></a>
+                                                                            <a href="#" title="Download"><i
+                                                                                    class="fas fa-download fa-1x fa-fw mr-2 text-primary"></i></a>
+                                                                        </td>
+                                                                    </tr>
+
+                                                                    <tr>
+                                                                        <td>File S</td>
+                                                                        <td>HTML</td>
+                                                                        <td>Dr. Khaled</td>
+                                                                        <td>19 July 2022</td>
+                                                                        <td>
+                                                                            <a href="#" title="Read"><i
+                                                                                    class="fas fa-book-open fa-1x fa-fw mr-2 text-primary"></i></a>
+                                                                            <a href="#" title="Download"><i
+                                                                                    class="fas fa-download fa-1x fa-fw mr-2 text-primary"></i></a>
+                                                                        </td>
+                                                                    </tr>
+
+                                                                    <tr>
+                                                                        <td>File T</td>
+                                                                        <td>ZIP</td>
+                                                                        <td>Dr. Tariq</td>
+                                                                        <td>20 July 2022</td>
+                                                                        <td>
+                                                                            <a href="#" title="Read"><i
+                                                                                    class="fas fa-book-open fa-1x fa-fw mr-2 text-primary"></i></a>
+                                                                            <a href="#" title="Download"><i
+                                                                                    class="fas fa-download fa-1x fa-fw mr-2 text-primary"></i></a>
+                                                                        </td>
+                                                                    </tr>
+
+                                                                </tbody>
+                                                            </table>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <!-- end pane 1 -->
+                                        </div>
+                                        <div class="tab-pane fade pt-4" id="nav-Exam-Design" role="tabpanel"
+                                            aria-labelledby="nav-Exam-tab-Design">
+                                            <!-- Pane 2 -->
+                                            <div class="Exam">
+                                                <div class="card shadow mb-4">
+                                                    <div class="card-header py-3">
+                                                        <h6 class="m-0 font-weight-bold text-primary">Design Exams 2023
+                                                        </h6>
+                                                    </div>
+                                                    <div class="card-body">
+                                                        <div class="table-responsive">
+                                                            <table class="table table-bordered" id="dataTable6"
+                                                                width="100%" cellspacing="0">
+                                                                <thead>
+                                                                    <tr>
+                                                                        <th>File name</th>
+                                                                        <th>File type</th>
+                                                                        <th>Uploader</th>
+                                                                        <th>Date</th>
+                                                                        <th>Actions</th>
+
+                                                                    </tr>
+                                                                </thead>
+                                                                <tfoot>
+                                                                    <tr>
+                                                                        <th>File name</th>
+                                                                        <th>File type</th>
+                                                                        <th>Uploader</th>
+                                                                        <th>Date</th>
+                                                                        <th>Actions</th>
+
+                                                                    </tr>
+                                                                </tfoot>
+                                                                <tbody>
+                                                                    <tr>
+                                                                        <td>File A</td>
+                                                                        <td>PDF</td>
+                                                                        <td>Dr. Ahmed</td>
+                                                                        <td>01 July 2022</td>
+                                                                        <td>
+                                                                            <a href="#" title="Read"><i
+                                                                                    class="fas fa-book-open fa-1x fa-fw mr-2 text-primary"></i></a>
+                                                                            <a href="#" title="Download"><i
+                                                                                    class="fas fa-download fa-1x fa-fw mr-2 text-primary"></i></a>
+                                                                        </td>
+                                                                    </tr>
+
+                                                                    <tr>
+                                                                        <td>File B</td>
+                                                                        <td>DOCX</td>
+                                                                        <td>Dr. Mahmoud</td>
+                                                                        <td>02 July 2022</td>
+                                                                        <td>
+                                                                            <a href="#" title="Read"><i
+                                                                                    class="fas fa-book-open fa-1x fa-fw mr-2 text-primary"></i></a>
+                                                                            <a href="#" title="Download"><i
+                                                                                    class="fas fa-download fa-1x fa-fw mr-2 text-primary"></i></a>
+                                                                        </td>
+                                                                    </tr>
+
+                                                                    <tr>
+                                                                        <td>File C</td>
+                                                                        <td>PPT</td>
+                                                                        <td>Dr. Sami</td>
+                                                                        <td>03 July 2021</td>
+                                                                        <td>
+                                                                            <a href="#" title="Read"><i
+                                                                                    class="fas fa-book-open fa-1x fa-fw mr-2 text-primary"></i></a>
+                                                                            <a href="#" title="Download"><i
+                                                                                    class="fas fa-download fa-1x fa-fw mr-2 text-primary"></i></a>
+                                                                        </td>
+                                                                    </tr>
+
+                                                                    <!-- ... Repeated for the sake of brevity ... -->
+
+                                                                    <tr>
+                                                                        <td>File R</td>
+                                                                        <td>EXCEL</td>
+                                                                        <td>Dr. Yasser</td>
+                                                                        <td>18 July 2022</td>
+                                                                        <td>
+                                                                            <a href="#" title="Read"><i
+                                                                                    class="fas fa-book-open fa-1x fa-fw mr-2 text-primary"></i></a>
+                                                                            <a href="#" title="Download"><i
+                                                                                    class="fas fa-download fa-1x fa-fw mr-2 text-primary"></i></a>
+                                                                        </td>
+                                                                    </tr>
+
+                                                                    <tr>
+                                                                        <td>File S</td>
+                                                                        <td>HTML</td>
+                                                                        <td>Dr. Khaled</td>
+                                                                        <td>19 July 2022</td>
+                                                                        <td>
+                                                                            <a href="#" title="Read"><i
+                                                                                    class="fas fa-book-open fa-1x fa-fw mr-2 text-primary"></i></a>
+                                                                            <a href="#" title="Download"><i
+                                                                                    class="fas fa-download fa-1x fa-fw mr-2 text-primary"></i></a>
+                                                                        </td>
+                                                                    </tr>
+
+                                                                    <tr>
+                                                                        <td>File T</td>
+                                                                        <td>ZIP</td>
+                                                                        <td>Dr. Tariq</td>
+                                                                        <td>20 July 2022</td>
+                                                                        <td>
+                                                                            <a href="#" title="Read"><i
+                                                                                    class="fas fa-book-open fa-1x fa-fw mr-2 text-primary"></i></a>
+                                                                            <a href="#" title="Download"><i
+                                                                                    class="fas fa-download fa-1x fa-fw mr-2 text-primary"></i></a>
+                                                                        </td>
+                                                                    </tr>
+
+                                                                </tbody>
+                                                            </table>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <!-- end pane 2 -->
+                                        </div>
+                                        <div class="tab-pane fade pt-4" id="nav-Sheets-Design" role="tabpanel"
+                                            aria-labelledby="nav-Sheets-tab-Design">
+                                            <!-- Pane 3 -->
+                                            <div class="Sheets">
+                                                <div class="card shadow mb-4">
+                                                    <div class="card-header py-3">
+                                                        <h6 class="m-0 font-weight-bold text-primary">Design Sheets 2023
+                                                        </h6>
+                                                    </div>
+                                                    <div class="card-body">
+                                                        <div class="table-responsive">
+                                                            <table class="table table-bordered" id="dataTable7"
+                                                                width="100%" cellspacing="0">
+                                                                <thead>
+                                                                    <tr>
+                                                                        <th>File name</th>
+                                                                        <th>File type</th>
+                                                                        <th>Uploader</th>
+                                                                        <th>Date</th>
+                                                                        <th>Actions</th>
+
+                                                                    </tr>
+                                                                </thead>
+                                                                <tfoot>
+                                                                    <tr>
+                                                                        <th>File name</th>
+                                                                        <th>File type</th>
+                                                                        <th>Uploader</th>
+                                                                        <th>Date</th>
+                                                                        <th>Actions</th>
+
+                                                                    </tr>
+                                                                </tfoot>
+                                                                <tbody>
+                                                                    <tr>
+                                                                        <td>File A</td>
+                                                                        <td>PDF</td>
+                                                                        <td>Dr. Ahmed</td>
+                                                                        <td>01 July 2022</td>
+                                                                        <td>
+                                                                            <a href="#" title="Read"><i
+                                                                                    class="fas fa-book-open fa-1x fa-fw mr-2 text-primary"></i></a>
+                                                                            <a href="#" title="Download"><i
+                                                                                    class="fas fa-download fa-1x fa-fw mr-2 text-primary"></i></a>
+                                                                        </td>
+                                                                    </tr>
+
+                                                                    <tr>
+                                                                        <td>File B</td>
+                                                                        <td>DOCX</td>
+                                                                        <td>Dr. Mahmoud</td>
+                                                                        <td>02 July 2022</td>
+                                                                        <td>
+                                                                            <a href="#" title="Read"><i
+                                                                                    class="fas fa-book-open fa-1x fa-fw mr-2 text-primary"></i></a>
+                                                                            <a href="#" title="Download"><i
+                                                                                    class="fas fa-download fa-1x fa-fw mr-2 text-primary"></i></a>
+                                                                        </td>
+                                                                    </tr>
+
+                                                                    <tr>
+                                                                        <td>File C</td>
+                                                                        <td>PPT</td>
+                                                                        <td>Dr. Sami</td>
+                                                                        <td>03 July 2022</td>
+                                                                        <td>
+                                                                            <a href="#" title="Read"><i
+                                                                                    class="fas fa-book-open fa-1x fa-fw mr-2 text-primary"></i></a>
+                                                                            <a href="#" title="Download"><i
+                                                                                    class="fas fa-download fa-1x fa-fw mr-2 text-primary"></i></a>
+                                                                        </td>
+                                                                    </tr>
+
+                                                                    <!-- ... Repeated for the sake of brevity ... -->
+
+                                                                    <tr>
+                                                                        <td>File R</td>
+                                                                        <td>EXCEL</td>
+                                                                        <td>Dr. Yasser</td>
+                                                                        <td>18 July 2022</td>
+                                                                        <td>
+                                                                            <a href="#" title="Read"><i
+                                                                                    class="fas fa-book-open fa-1x fa-fw mr-2 text-primary"></i></a>
+                                                                            <a href="#" title="Download"><i
+                                                                                    class="fas fa-download fa-1x fa-fw mr-2 text-primary"></i></a>
+                                                                        </td>
+                                                                    </tr>
+
+                                                                    <tr>
+                                                                        <td>File S</td>
+                                                                        <td>HTML</td>
+                                                                        <td>Dr. Khaled</td>
+                                                                        <td>19 July 2022</td>
+                                                                        <td>
+                                                                            <a href="#" title="Read"><i
+                                                                                    class="fas fa-book-open fa-1x fa-fw mr-2 text-primary"></i></a>
+                                                                            <a href="#" title="Download"><i
+                                                                                    class="fas fa-download fa-1x fa-fw mr-2 text-primary"></i></a>
+                                                                        </td>
+                                                                    </tr>
+
+                                                                    <tr>
+                                                                        <td>File T</td>
+                                                                        <td>ZIP</td>
+                                                                        <td>Dr. Tariq</td>
+                                                                        <td>20 July 2022</td>
+                                                                        <td>
+                                                                            <a href="#" title="Read"><i
+                                                                                    class="fas fa-book-open fa-1x fa-fw mr-2 text-primary"></i></a>
+                                                                            <a href="#" title="Download"><i
+                                                                                    class="fas fa-download fa-1x fa-fw mr-2 text-primary"></i></a>
+                                                                        </td>
+                                                                    </tr>
+
+                                                                </tbody>
+                                                            </table>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <!-- end pane 3 -->
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- end pane 2 -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
 
             </div>
             <!-- End of Main Content -->
@@ -335,7 +1157,8 @@
             <footer class="sticky-footer bg-white">
                 <div class="container my-auto">
                     <div class="copyright text-center my-auto">
-                        <span>Copyright &copy; Game3y 2023</span>
+                        <span>© 2023 Game3y All Rights Reserved. created by <a href="motawreen.com">Motawreen
+                                Team.</a></span>
                     </div>
                 </div>
             </footer>
@@ -387,8 +1210,53 @@
     <script src="assets/vendor/datatables/jquery.dataTables.js"></script>
     <script src="assets/vendor/datatables/dataTables.bootstrap4.min.js"></script>
 
+    <!-- Sorting by day month year -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment.min.js"></script>
+    <script src="https://cdn.datatables.net/plug-ins/1.10.21/sorting/datetime-moment.js"></script>
     <!-- Page level custom scripts -->
-    <script src="assets/js/demo/datatables-demo.js"></script>
+    <script>
+        // Call the dataTables jQuery plugin
+        $(document).ready(function () {
+            $.fn.dataTable.moment('DD MMMM YYYY');
+
+            $('#dataTable2').DataTable({
+                columnDefs: [{
+                    targets: [4],
+                    orderable: false
+                }]
+            });
+            $('#dataTable3').DataTable({
+                columnDefs: [{
+                    targets: [4],
+                    orderable: false
+                }]
+            });
+            $('#dataTable4').DataTable({
+                columnDefs: [{
+                    targets: [4],
+                    orderable: false
+                }]
+            });
+            $('#dataTable5').DataTable({
+                columnDefs: [{
+                    targets: [4],
+                    orderable: false
+                }]
+            });
+            $('#dataTable6').DataTable({
+                columnDefs: [{
+                    targets: [4],
+                    orderable: false
+                }]
+            });
+            $('#dataTable7').DataTable({
+                columnDefs: [{
+                    targets: [4],
+                    orderable: false
+                }]
+            });
+        });
+    </script>
     <script src="assets/js/dashboard.js"></script>
 
 </body>

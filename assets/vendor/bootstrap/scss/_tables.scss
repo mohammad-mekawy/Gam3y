@@ -183,3 +183,15 @@
     }
   }
 }
+
+tbody tr {
+  transition: all 500ms;
+  @include hover() {
+    color: #fff;
+    background-color: #2f56c7;
+    i{
+      transition: all 500ms;
+      color: #fff !important;
+    }
+  }
+}

@@ -3,10 +3,6 @@
     width: $sidebar-collapsed-width;
     min-height: 100vh;
     border-radius: 0 70px 0 0;
-    
-    * {
-        transition: all 500ms;
-      }
 
     .nav-item {
         position: relative;

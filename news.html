@@ -11,15 +11,16 @@
 
     <title>Game3y - News</title>
 
-     <!-- Custom fonts for this template-->
-     <link href="assets/vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
+    <!-- Custom fonts for this template-->
+    <link href="assets/vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
 
-     <!-- Custom styles for this template-->
-     <link href="assets/scss/sb-admin-2.css" rel="stylesheet">
+    <!-- Custom styles for this template-->
+    <link href="assets/scss/sb-admin-2.css" rel="stylesheet">
+    <link href="assets/scss/form.css" rel="stylesheet">
 
     <!-- Custom styles for this page -->
     <link href="assets/vendor/datatables/dataTables.bootstrap4.min.css" rel="stylesheet">
-    
+
     <!-- favicon -->
     <link rel="apple-touch-icon" sizes="180x180" href="assets/favicon/">
     <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon/favicon-32x32.png">
@@ -32,93 +33,98 @@
     <!-- Page Wrapper -->
     <div id="wrapper">
 
-                <!-- Sidebar -->
-                <ul class="navbar-nav bg-gradient-primary sidebar sidebar-dark accordion" id="accordionSidebar">
+        <!-- Sidebar -->
+        <ul class="navbar-nav bg-gradient-primary sidebar sidebar-dark accordion" id="accordionSidebar">
 
-                    <!-- Sidebar - Brand -->
-                    <a class="sidebar-brand d-flex align-items-center justify-content-center" href="index.html">
-                        <img src="assets/imgs/Light-logo.svg" alt="logo">
-                    </a>
-        
-                    <!-- Divider -->
-                    <hr class="sidebar-divider my-0">
-        
-                    <!-- Nav Item - Dashboard -->
-                    <li class="nav-item">
-                        <a class="nav-link" href="student-dashboard.html">
-                            <i class="fas fa-fw fa-tachometer-alt"></i>
-                            <span>Dashboard</span></a>
-                    </li>
-        
-                    <!-- Divider -->
-                    <hr class="sidebar-divider">
-        
-        
-                    <!-- Nav Item - Tables -->
-                    <li class="nav-item">
-                        <a class="nav-link" href="schedule.html">
-                            <i class="fas fa-fw fa-table"></i>
-                            <span>Schedule</span></a>
-                    </li>
-        
-                    <!-- Nav Item - Tables -->
-                    <li class="nav-item">
-                        <a class="nav-link" href="subject.html">
-                            <i class="fas fa-fw fa-book"></i>
-                            <span>Subject</span></a>
-                    </li>
-        
-                    <!-- Nav Item - Tables -->
-                    <li class="nav-item">
-                        <a class="nav-link" href="messages.html">
-                            <i class="fas fa-fw fa-envelope"></i>
-                            <span>Messages</span></a>
-                    </li>
-        
-                    <!-- Nav Item - Tables -->
-                    <li class="nav-item">
-                        <a class="nav-link" href="posts.html">
-                            <i class="fas fa-fw fa-pen"></i>
-                            <span>Posts</span></a>
-                    </li>
-        
-                    <!-- Nav Item - Tables -->
-                    <li class="nav-item active">
-                        <a class="nav-link" href="news.html">
-                            <i class="fas fa-fw fa-newspaper"></i>
-                            <span>News</span></a>
-                    </li>
-        
-                    <!-- Nav Item - Tables -->
-                    <li class="nav-item">
-                        <a class="nav-link" href="suggestions.html">
-                            <i class="fas fa-fw fa-paper-plane"></i>
-                            <span>Suggestions</span></a>
-                    </li>
-        
-                    <!-- Nav Item - Tables -->
-                    <li class="nav-item">
-                        <a class="nav-link" href="archive.html">
-                            <i class="fas fa-fw fa-archive"></i>
-                            <span>Archive</span></a>
-                    </li>
-                    <!-- Divider -->
-                    <hr class="sidebar-divider d-none d-md-block">
-        
-                    <!-- Sidebar Toggler (Sidebar) -->
-                    <div class="text-center d-none d-md-inline">
-                        <button class="rounded-circle border-0" id="sidebarToggle"></button>
-                    </div>
-        
-                    <!-- Sidebar Message -->
-                    <div class="sidebar-card d-none d-lg-flex">
-                        <img class="img-fluid" src="assets/imgs/hero.webp" alt="...">
-                        <h2 class="text-center mb-2 invite-text"> Invite your friends</h2>
-                        <a class="btn btn-success btn-sm invite">Get the link</a>
-                    </div>
-        
-                </ul>
-                <!-- End of Sidebar -->
+            <!-- Sidebar - Brand -->
+            <a class="sidebar-brand d-flex align-items-center justify-content-center" href="index.html">
+                <img src="assets/imgs/Light-logo.svg" alt="logo">
+            </a>
+
+            <!-- Divider -->
+            <hr class="sidebar-divider my-0">
+
+            <!-- Nav Item - Dashboard -->
+            <li class="nav-item">
+                <a class="nav-link" href="student-dashboard.html">
+                    <i class="fas fa-fw fa-tachometer-alt"></i>
+                    <span>Dashboard</span></a>
+            </li>
+
+            <!-- Divider -->
+            <hr class="sidebar-divider">
+
+
+            <!-- Nav Item - Tables -->
+            <li class="nav-item">
+                <a class="nav-link" href="schedule.html">
+                    <i class="fas fa-fw fa-table"></i>
+                    <span>Schedule</span></a>
+            </li>
+
+            <!-- Nav Item - Tables -->
+            <li class="nav-item">
+                <a class="nav-link" href="subject.html">
+                    <i class="fas fa-fw fa-book"></i>
+                    <span>Subject</span></a>
+            </li>
+
+            <!-- Nav Item - Tables -->
+            <li class="nav-item">
+                <a class="nav-link" href="messages.html">
+                    <i class="fas fa-fw fa-envelope"></i>
+                    <span>Messages</span></a>
+            </li>
+
+            <!-- Nav Item - Tables -->
+            <li class="nav-item">
+                <a class="nav-link" href="posts.html">
+                    <i class="fas fa-fw fa-pen"></i>
+                    <span>Posts</span></a>
+            </li>
+
+            <!-- Nav Item - Tables -->
+            <li class="nav-item active">
+                <a class="nav-link" href="news.html">
+                    <i class="fas fa-fw fa-newspaper"></i>
+                    <span>News</span></a>
+            </li>
+            <!-- Nav Item - Tables -->
+            <li class="nav-item ">
+                <a class="nav-link" href="events.html">
+                    <i class="fas fa-fw fa-calendar-day"></i>
+                    <span>Events</span></a>
+            </li>
+            <!-- Nav Item - Tables -->
+            <li class="nav-item">
+                <a class="nav-link" href="suggestions.html">
+                    <i class="fas fa-fw fa-paper-plane"></i>
+                    <span>Suggestions / Claims</span></a>
+            </li>
+
+            <!-- Nav Item - Tables -->
+            <li class="nav-item">
+                <a class="nav-link" href="archive.html">
+                    <i class="fas fa-fw fa-archive"></i>
+                    <span>Archive</span></a>
+            </li>
+            <!-- Divider -->
+            <hr class="sidebar-divider d-none d-md-block">
+
+            <!-- Sidebar Toggler (Sidebar) -->
+            <div class="text-center d-none d-md-inline">
+                <button class="rounded-circle border-0" id="sidebarToggle"></button>
+            </div>
+
+            <!-- Sidebar Message -->
+            <div class="sidebar-card d-none d-lg-flex">
+                <img class="img-fluid" src="assets/imgs/hero.webp" alt="...">
+                <h2 class="text-center mb-2 invite-text"> Invite your friends</h2>
+                <a class="btn btn-success btn-sm invite">Get the link</a>
+            </div>
+
+        </ul>
+        <!-- End of Sidebar -->
 
         <!-- Content Wrapper -->
         <div id="content-wrapper" class="d-flex flex-column">
@@ -242,8 +248,7 @@
                                 </h6>
                                 <a class="dropdown-item d-flex align-items-center" href="#">
                                     <div class="dropdown-list-image mr-3">
-                                        <img class="rounded-circle" src="assets/imgs/undraw_profile_1.svg"
-                                            alt="...">
+                                        <img class="rounded-circle" src="assets/imgs/undraw_profile_1.svg" alt="...">
                                         <div class="status-indicator bg-success"></div>
                                     </div>
                                     <div class="font-weight-bold">
@@ -254,8 +259,7 @@
                                 </a>
                                 <a class="dropdown-item d-flex align-items-center" href="#">
                                     <div class="dropdown-list-image mr-3">
-                                        <img class="rounded-circle" src="assets/imgs/undraw_profile_2.svg"
-                                            alt="...">
+                                        <img class="rounded-circle" src="assets/imgs/undraw_profile_2.svg" alt="...">
                                         <div class="status-indicator"></div>
                                     </div>
                                     <div>
@@ -266,8 +270,7 @@
                                 </a>
                                 <a class="dropdown-item d-flex align-items-center" href="#">
                                     <div class="dropdown-list-image mr-3">
-                                        <img class="rounded-circle" src="assets/imgs/undraw_profile_3.svg"
-                                            alt="...">
+                                        <img class="rounded-circle" src="assets/imgs/undraw_profile_3.svg" alt="...">
                                         <div class="status-indicator bg-warning"></div>
                                     </div>
                                     <div>
@@ -299,8 +302,7 @@
                             <a class="nav-link dropdown-toggle" href="#" id="userDropdown" role="button"
                                 data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                 <span class="mr-2 d-none d-lg-inline text-gray-600 small">Ahmed Khaled</span>
-                                <img class="img-profile rounded-circle"
-                                    src="assets/imgs/undraw_profile.svg">
+                                <img class="img-profile rounded-circle" src="assets/imgs/undraw_profile.svg">
                             </a>
                             <!-- Dropdown - User Information -->
                             <div class="dropdown-menu dropdown-menu-right shadow animated--grow-in"
@@ -309,10 +311,10 @@
                                     <i class="fas fa-user fa-sm fa-fw mr-2 text-gray-400"></i>
                                     Profile
                                 </a>
-                                <a class="dropdown-item" href="#">
+                                <!-- <a class="dropdown-item" href="#">
                                     <i class="fas fa-cogs fa-sm fa-fw mr-2 text-gray-400"></i>
                                     Settings
-                                </a>
+                                </a> -->
                                 <div class="dropdown-divider"></div>
                                 <a class="dropdown-item" href="#" data-toggle="modal" data-target="#logoutModal">
                                     <i class="fas fa-sign-out-alt fa-sm fa-fw mr-2 text-gray-400"></i>
@@ -326,7 +328,116 @@
                 </nav>
                 <!-- End of Topbar -->
 
-                
+                <!-- main content -->
+                <div class="container-fluid">
+                    <div class="d-sm-flex align-items-center justify-content-between mb-4">
+                        <h1 class="h3 mb-0 text-gray-800">Latest News</h1>
+                    </div>
+                    <div class="row latest-news">
+                        <article class="p-3 col-md-6">
+                            <div class="card border-left-danger mb-3 pr-3">
+                                <div class="row align-items-center">
+                                    <div class="col-md-4">
+                                        <img src="assets/imgs/hero.webp" class="card-img" alt="news picture">
+                                    </div>
+                                    <div class="col-md-8">
+                                        <div class="card-body">
+                                            <h5 class="card-title mb-1"><a href="single-news.html"
+                                                    class="font-weight-bold main-color">Lorem
+                                                    ipsum dolor sit amet consectetur.
+                                                </a></h5>
+                                            <p class="card-text"><small class="sec-color">1 January 2024</small></p>
+                                            <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing
+                                                elit.
+                                                Error quisquam est illo, maiores perspiciatis odio in assumenda
+                                                nesciunt
+                                                quod asperiores esse dolorum facilis debitis nemo?... <small><a
+                                                        href="single-news.html" class="main-color">Read
+                                                        More</a></small></p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </article>
+                        <article class="p-3 col-md-6">
+                            <div class="card border-left-danger mb-3 pr-3">
+                                <div class="row align-items-center">
+                                    <div class="col-md-4">
+                                        <img src="assets/imgs/hero.webp" class="card-img" alt="news picture">
+                                    </div>
+                                    <div class="col-md-8">
+                                        <div class="card-body">
+                                            <h5 class="card-title mb-1"><a href="single-news.html"
+                                                    class="font-weight-bold main-color">Lorem
+                                                    ipsum dolor sit amet consectetur.
+                                                </a></h5>
+                                            <p class="card-text"><small class="sec-color">1 January 2024</small></p>
+                                            <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing
+                                                elit.
+                                                Error quisquam est illo, maiores perspiciatis odio in assumenda
+                                                nesciunt
+                                                quod asperiores esse dolorum facilis debitis nemo?... <small><a
+                                                        href="single-news.html" class="main-color">Read
+                                                        More</a></small></p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </article>
+                        <article class="p-3 col-md-6">
+                            <div class="card border-left-danger mb-3 pr-3">
+                                <div class="row align-items-center">
+                                    <div class="col-md-4">
+                                        <img src="assets/imgs/hero.webp" class="card-img" alt="news picture">
+                                    </div>
+                                    <div class="col-md-8">
+                                        <div class="card-body">
+                                            <h5 class="card-title mb-1"><a href="single-news.html"
+                                                    class="font-weight-bold main-color">Lorem
+                                                    ipsum dolor sit amet consectetur.
+                                                </a></h5>
+                                            <p class="card-text"><small class="sec-color">1 January 2024</small></p>
+                                            <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing
+                                                elit.
+                                                Error quisquam est illo, maiores perspiciatis odio in assumenda
+                                                nesciunt
+                                                quod asperiores esse dolorum facilis debitis nemo?... <small><a
+                                                        href="single-news.html" class="main-color">Read
+                                                        More</a></small></p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </article>
+                        <article class="p-3 col-md-6">
+                            <div class="card border-left-danger mb-3 pr-3">
+                                <div class="row align-items-center">
+                                    <div class="col-md-4">
+                                        <img src="assets/imgs/hero.webp" class="card-img" alt="news picture">
+                                    </div>
+                                    <div class="col-md-8">
+                                        <div class="card-body">
+                                            <h5 class="card-title mb-1"><a href="single-news.html"
+                                                    class="font-weight-bold main-color">Lorem
+                                                    ipsum dolor sit amet consectetur.
+                                                </a></h5>
+                                            <p class="card-text"><small class="sec-color">1 January 2024</small></p>
+                                            <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing
+                                                elit.
+                                                Error quisquam est illo, maiores perspiciatis odio in assumenda
+                                                nesciunt
+                                                quod asperiores esse dolorum facilis debitis nemo?... <small><a
+                                                        href="single-news.html" class="main-color">Read
+                                                        More</a></small></p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+
+
 
             </div>
             <!-- End of Main Content -->
@@ -335,7 +446,8 @@
             <footer class="sticky-footer bg-white">
                 <div class="container my-auto">
                     <div class="copyright text-center my-auto">
-                        <span>Copyright &copy; Game3y 2023</span>
+                        <span>© 2023 Game3y All Rights Reserved. created by <a href="motawreen.com">Motawreen
+                                Team.</a></span>
                     </div>
                 </div>
             </footer>

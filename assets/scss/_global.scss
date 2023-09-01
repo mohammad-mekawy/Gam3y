@@ -1,5 +1,8 @@
 // Global component styles
-
+$main-color: #4A69BD;
+$main-light:lighten($main-color,5%);
+$red-color: #DE1A02;
+$yellow-color: #F6B93B;
 html {
   position: relative;
   min-height: 100%;
