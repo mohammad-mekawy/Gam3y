@@ -1,0 +1,207 @@
+{
+    "HeatTransfer": {
+      "Summary": [
+        {
+          "fileName": "Heat Transfer Summary 1",
+          "fileType": "PDF",
+          "uploader": "Dr. Ahmed",
+          "date": "01 July 2023",
+          "actions": {
+            "read": "path/to/read/heat-transfer-summary-1",
+            "download": "path/to/download/heat-transfer-summary-1"
+          }
+        },
+        {
+          "fileName": "Heat Transfer Summary 2",
+          "fileType": "PDF",
+          "uploader": "Dr. Smith",
+          "date": "15 July 2023",
+          "actions": {
+            "read": "path/to/read/heat-transfer-summary-2",
+            "download": "path/to/download/heat-transfer-summary-2"
+          }
+        }
+      ],
+      "Exam": [
+        {
+          "fileName": "Heat Transfer Exam 1",
+          "fileType": "PDF",
+          "uploader": "Dr. Ahmed",
+          "date": "10 August 2023",
+          "actions": {
+            "read": "path/to/read/heat-transfer-exam-1",
+            "download": "path/to/download/heat-transfer-exam-1"
+          }
+        },
+        {
+          "fileName": "Heat Transfer Exam 2",
+          "fileType": "PDF",
+          "uploader": "Dr. Smith",
+          "date": "20 August 2023",
+          "actions": {
+            "read": "path/to/read/heat-transfer-exam-2",
+            "download": "path/to/download/heat-transfer-exam-2"
+          }
+        }
+      ],
+      "Sheets": [
+        {
+          "fileName": "Heat Transfer Sheet 1",
+          "fileType": "PDF",
+          "uploader": "Dr. Ahmed",
+          "date": "05 September 2023",
+          "actions": {
+            "read": "path/to/read/heat-transfer-sheet-1",
+            "download": "path/to/download/heat-transfer-sheet-1"
+          }
+        },
+        {
+          "fileName": "Heat Transfer Sheet 2",
+          "fileType": "PDF",
+          "uploader": "Dr. Smith",
+          "date": "15 September 2023",
+          "actions": {
+            "read": "path/to/read/heat-transfer-sheet-2",
+            "download": "path/to/download/heat-transfer-sheet-2"
+          }
+        }
+      ]
+    },
+    "FluidMechanics": {
+      "Summary": [
+        {
+          "fileName": "Fluid Mechanics Summary 1",
+          "fileType": "PDF",
+          "uploader": "Prof. Johnson",
+          "date": "02 July 2023",
+          "actions": {
+            "read": "path/to/read/fluid-mechanics-summary-1",
+            "download": "path/to/download/fluid-mechanics-summary-1"
+          }
+        },
+        {
+          "fileName": "Fluid Mechanics Summary 2",
+          "fileType": "PDF",
+          "uploader": "Prof. Clark",
+          "date": "16 July 2023",
+          "actions": {
+            "read": "path/to/read/fluid-mechanics-summary-2",
+            "download": "path/to/download/fluid-mechanics-summary-2"
+          }
+        }
+      ],
+      "Exam": [
+        {
+          "fileName": "Fluid Mechanics Exam 1",
+          "fileType": "PDF",
+          "uploader": "Prof. Johnson",
+          "date": "11 August 2023",
+          "actions": {
+            "read": "path/to/read/fluid-mechanics-exam-1",
+            "download": "path/to/download/fluid-mechanics-exam-1"
+          }
+        },
+        {
+          "fileName": "Fluid Mechanics Exam 2",
+          "fileType": "PDF",
+          "uploader": "Prof. Clark",
+          "date": "21 August 2023",
+          "actions": {
+            "read": "path/to/read/fluid-mechanics-exam-2",
+            "download": "path/to/download/fluid-mechanics-exam-2"
+          }
+        }
+      ],
+      "Sheets": [
+        {
+          "fileName": "Fluid Mechanics Sheet 1",
+          "fileType": "PDF",
+          "uploader": "Prof. Johnson",
+          "date": "06 September 2023",
+          "actions": {
+            "read": "path/to/read/fluid-mechanics-sheet-1",
+            "download": "path/to/download/fluid-mechanics-sheet-1"
+          }
+        },
+        {
+          "fileName": "Fluid Mechanics Sheet 2",
+          "fileType": "PDF",
+          "uploader": "Prof. Clark",
+          "date": "16 September 2023",
+          "actions": {
+            "read": "path/to/read/fluid-mechanics-sheet-2",
+            "download": "path/to/download/fluid-mechanics-sheet-2"
+          }
+        }
+      ]
+    },
+    "Thermodynamics": {
+      "Summary": [
+        {
+          "fileName": "Thermodynamics Summary 1",
+          "fileType": "PDF",
+          "uploader": "Dr. Lee",
+          "date": "03 July 2023",
+          "actions": {
+            "read": "path/to/read/thermodynamics-summary-1",
+            "download": "path/to/download/thermodynamics-summary-1"
+          }
+        },
+        {
+          "fileName": "Thermodynamics Summary 2",
+          "fileType": "PDF",
+          "uploader": "Dr. Kim",
+          "date": "17 July 2023",
+          "actions": {
+            "read": "path/to/read/thermodynamics-summary-2",
+            "download": "path/to/download/thermodynamics-summary-2"
+          }
+        }
+      ],
+      "Exam": [
+        {
+          "fileName": "Thermodynamics Exam 1",
+          "fileType": "PDF",
+          "uploader": "Dr. Lee",
+          "date": "12 August 2023",
+          "actions": {
+            "read": "path/to/read/thermodynamics-exam-1",
+            "download": "path/to/download/thermodynamics-exam-1"
+          }
+        },
+        {
+          "fileName": "Thermodynamics Exam 2",
+          "fileType": "PDF",
+          "uploader": "Dr. Kim",
+          "date": "22 August 2023",
+          "actions": {
+            "read": "path/to/read/thermodynamics-exam-2",
+            "download": "path/to/download/thermodynamics-exam-2"
+          }
+        }
+      ],
+      "Sheets": [
+        {
+          "fileName": "Thermodynamics Sheet 1",
+          "fileType": "PDF",
+          "uploader": "Dr. Lee",
+          "date": "07 September 2023",
+          "actions": {
+            "read": "path/to/read/thermodynamics-sheet-1",
+            "download": "path/to/download/thermodynamics-sheet-1"
+          }
+        },
+        {
+          "fileName": "Thermodynamics Sheet 2",
+          "fileType": "PDF",
+          "uploader": "Dr. Kim",
+          "date": "17 September 2023",
+          "actions": {
+            "read": "path/to/read/thermodynamics-sheet-2",
+            "download": "path/to/download/thermodynamics-sheet-2"
+          }
+        }
+      ]
+    }
+  }
+  
