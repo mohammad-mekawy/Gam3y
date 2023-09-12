@@ -395,22 +395,19 @@
 
                 <!-- page content -->
                 <div class="container subject-page">
-                    <!-- Subject Buttons -->
-                    <div class="subject-buttons">
+                    <div class="subject-container">
                         <button class="subject-button active" data-subject="HeatTransfer">Heat Transfer</button>
                         <button class="subject-button" data-subject="FluidMechanics">Fluid Mechanics</button>
                         <button class="subject-button" data-subject="Thermodynamics">Thermodynamics</button>
                     </div>
 
-                    <!-- Material Type Buttons -->
-                    <div class="material-buttons">
+                    <div class="material-container">
                         <button class="material-button active" data-material="Summary">Summary</button>
                         <button class="material-button" data-material="Exam">Exam</button>
                         <button class="material-button" data-material="Sheets">Sheets</button>
                     </div>
 
-                    <!-- Table to display the materials -->
-                    <table id="data-table">
+                    <table id="datatable" class="display">
                         <thead>
                             <tr>
                                 <th>File Name</th>
@@ -421,64 +418,73 @@
                             </tr>
                         </thead>
                         <tbody>
-                            <!-- Data will be filled here by the AJAX call -->
+                            <!-- Data will be inserted here via AJAX -->
                         </tbody>
                     </table>
 
+
                     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
                     <script>
                         $(document).ready(function () {
-                            let currentSubject = "HeatTransfer";
-                            let currentMaterialType = "Summary";
+                            $.fn.dataTable.moment('DD MMMM YYYY');
+                            var table = $('#datatable').DataTable({
+                                columnDefs: [{
+                                    targets: [4],
+                                    orderable: false
+                                }]
+                            });
 
-                            function fetchAndDisplayData(subject, materialType) {
+                            function fetchData(currentSubject, currentMaterialType) {
                                 $.ajax({
-                                    url: 'data/data.json',
-                                    method: 'GET',
-                                    dataType: 'json',
+                                    url: "data/data.json",
+                                    method: "GET",
+                                    dataType: "json",
                                     success: function (data) {
-                                        let materialData = data[subject][materialType];
-                                        let tableBody = $("#data-table tbody");
-                                        tableBody.empty();
-                                        materialData.forEach(item => {
-                                            let row = `<tr>
-                        <td>${item.fileName}</td>
-                        <td>${item.fileType}</td>
-                        <td>${item.uploader}</td>
-                        <td>${item.date}</td>
-                        <td>
-                            <a href="${item.actions.read}" target="_blank">Read</a> | 
-                            <a href="${item.actions.download}" target="_blank">Download</a>
-                        </td>
-                    </tr>`;
-                                            tableBody.append(row);
-                                        });
+                                        var newData = data[currentSubject][currentMaterialType];
+                                        updateTable(newData);
                                     },
                                     error: function (error) {
-                                        console.error("Error fetching data", error);
+                                        console.log("Error fetching data", error);
                                     }
                                 });
                             }
 
-                            function setActiveButton(buttonGroupClass, buttonClass) {
-                                $(buttonGroupClass).find('button').removeClass('active');
-                                $(buttonClass).addClass('active');
+                            function updateTable(newData) {
+                                table.clear();
+                                newData.forEach(function (item) {
+                                    table.row.add([
+                                        item.fileName,
+                                        item.fileType,
+                                        item.uploader,
+                                        item.date,
+                                        '<a href="' + item.actions.read + '">Read</a> | <a href="' + item.actions.download + '">Download</a>'
+                                    ]).draw();
+                                });
                             }
 
-                            $(".subject-button").click(function () {
-                                currentSubject = $(this).data('subject');
-                                fetchAndDisplayData(currentSubject, currentMaterialType);
-                                setActiveButton('.subject-buttons', this);
-                            });
+                            function initializeButtons() {
+                                $(".subject-button").on("click", function () {
+                                    $(".subject-button").removeClass("active");
+                                    $(this).addClass("active");
 
-                            $(".material-button").click(function () {
-                                currentMaterialType = $(this).data('material');
-                                fetchAndDisplayData(currentSubject, currentMaterialType);
-                                setActiveButton('.material-buttons', this);
-                            });
+                                    var currentSubject = $(this).data("subject");
+                                    var currentMaterialType = $(".material-button.active").data("material");
+                                    fetchData(currentSubject, currentMaterialType);
+                                });
 
-                            // Initial Data Fetch
-                            fetchAndDisplayData(currentSubject, currentMaterialType);
+                                $(".material-button").on("click", function () {
+                                    $(".material-button").removeClass("active");
+                                    $(this).addClass("active");
+
+                                    var currentSubject = $(".subject-button.active").data("subject");
+                                    var currentMaterialType = $(this).data("material");
+                                    fetchData(currentSubject, currentMaterialType);
+                                });
+                            }
+
+                            initializeButtons();
+                            fetchData("HeatTransfer", "Summary");
                         });
 
                     </script>
@@ -553,16 +559,16 @@
     <!-- Page level custom scripts -->
     <script>
         // Call the dataTables jQuery plugin
-        $(document).ready(function () {
-            $.fn.dataTable.moment('DD MMMM YYYY');
+        // $(document).ready(function () {
+        //     $.fn.dataTable.moment('DD MMMM YYYY');
 
-            $('#datatable').DataTable({
-                columnDefs: [{
-                    targets: [4],
-                    orderable: false
-                }]
-            });
-        });
+        //     $('#datatable').DataTable({
+        //         columnDefs: [{
+        //             targets: [4],
+        //             orderable: false
+        //         }]
+        //     });
+        // });
     </script>
     <script src="assets/js/dashboard.js"></script>
 
