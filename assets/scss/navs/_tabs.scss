@@ -4,6 +4,7 @@
         box-shadow: -3px 4px 4px 2px #3333334a;
         transform: translateY(-5px);
         transition: all 500ms;
+        cursor: pointer;
         &:hover{
             box-shadow: -2px 3px 3px 1px #3333334a;
         }
@@ -19,6 +20,7 @@
         transform: unset;
         transition: all 500ms;
         border: 0;
+        cursor: pointer;
         &:hover,&.active{
             color: #4A69BD;
             font-weight: 700;

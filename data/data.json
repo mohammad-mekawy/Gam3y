@@ -1,6 +1,6 @@
 {
     "HeatTransfer": {
-      "Summary": [
+      "Summaries": [
         {
           "fileName": "Heat Transfer Summary 1",
           "fileType": "PDF",
@@ -22,7 +22,7 @@
           }
         }
       ],
-      "Exam": [
+      "Exams": [
         {
           "fileName": "Heat Transfer Exam 1",
           "fileType": "PDF",
@@ -68,7 +68,7 @@
       ]
     },
     "FluidMechanics": {
-      "Summary": [
+      "Summaries": [
         {
           "fileName": "Fluid Mechanics Summary 1",
           "fileType": "PDF",
@@ -90,7 +90,7 @@
           }
         }
       ],
-      "Exam": [
+      "Exams": [
         {
           "fileName": "Fluid Mechanics Exam 1",
           "fileType": "PDF",
@@ -136,7 +136,7 @@
       ]
     },
     "Thermodynamics": {
-      "Summary": [
+      "Summaries": [
         {
           "fileName": "Thermodynamics Summary 1",
           "fileType": "PDF",
@@ -158,7 +158,7 @@
           }
         }
       ],
-      "Exam": [
+      "Exams": [
         {
           "fileName": "Thermodynamics Exam 1",
           "fileType": "PDF",
