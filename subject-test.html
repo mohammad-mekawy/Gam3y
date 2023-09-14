@@ -30,7 +30,14 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <style>
         #datatable_wrapper {
-            padding: .75rem 1.25rem
+            padding: .75rem 1.25rem;
+            overflow-x: auto;
+        }
+
+        @media(max-width:992px) {
+            #datatable_wrapper {
+                max-width: 94%;
+            }
         }
 
         table {
