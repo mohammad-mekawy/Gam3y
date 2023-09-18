@@ -238,6 +238,11 @@ header{
         justify-content: center;
         z-index: 2;
         margin-bottom: 20px;
+        .valid-response{
+          position: absolute;
+          bottom: -20px;
+          left: 10px;
+        }
       }
       
       .inputIcon {

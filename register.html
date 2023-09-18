@@ -48,20 +48,23 @@
       <div class="container">
         <div class="row justify-content-center">
           <div class="col-md-8">
-            <form action="student-dashboard.html" class="form_main mb-5 register-form rounded-5">
+            <form action="" class="form_main mb-5 register-form rounded-5 needs-validation">
               <p class="heading mb-3">Register</p>
               <div class="row">
                 <div class="col-md-6">
                   <div class="inputContainer">
-                    <input type="text" class="inputField" id="FirstName" placeholder="First Name">
-                    <div data-lastpass-icon-root="true"
-                      style="position: relative !important; height: 0px !important; width: 0px !important; float: left !important;">
+                    <input type="text" class="inputField" id="FirstName" placeholder="First Name" required>
+                    <div class="valid-response text-success">
+                      Looks good!
                     </div>
                   </div>
                 </div>
                 <div class="col-md-6">
                   <div class="inputContainer">
                     <input type="text" class="inputField" id="LastName" placeholder="Last Name">
+                    <div class="valid-response text-danger">
+                      Please Enter your last name
+                    </div>
                   </div>
                 </div>
                 <div class="col-md-6">
@@ -92,6 +95,9 @@
                         <option value="KSA">KSA</option>
                         <option value="UAE">UAE</option>
                       </select>
+                    </div>
+                    <div class="valid-response text-danger">
+                      Please Choose a country.
                     </div>
                   </div>
                 </div>

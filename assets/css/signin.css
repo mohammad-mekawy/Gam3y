@@ -230,6 +230,11 @@ header {
   z-index: 2;
   margin-bottom: 20px;
 }
+.hero .inputContainer .valid-response {
+  position: absolute;
+  bottom: -20px;
+  left: 10px;
+}
 .hero .inputIcon {
   position: absolute;
   left: 3px;
