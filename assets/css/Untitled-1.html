@@ -1,5 +1,6 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ar" dir="rtl" class="rtl">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -17,7 +18,8 @@
             -moz-appearance: none;
             outline: none;
             width: 200px;
-            padding: 10px 30px 10px 15px; /* Adjusted right padding */
+            padding: 10px 30px 10px 15px;
+            /* Adjusted right padding */
             font-size: 16px;
             border-radius: 8px;
             border: 1px solid #ccc;
@@ -42,18 +44,21 @@
             right: 10px;
             border-left: 5px solid transparent;
             border-right: 5px solid transparent;
-            border-top: 5px solid #888; /* Arrow color */
+            border-top: 5px solid #888;
+            /* Arrow color */
             transform: translateY(-50%);
-            pointer-events: none; /* Make sure clicks pass through to the select */
-            transition: transform 0.25s; /* Transition for smooth rotation */
+            pointer-events: none;
+            /* Make sure clicks pass through to the select */
+            transition: transform 0.25s;
+            /* Transition for smooth rotation */
         }
 
         .select-wrapper:focus-within::after {
             transform: translateY(-50%) rotate(180deg);
         }
-
     </style>
 </head>
+
 <body>
     <div class="select-wrapper">
         <select>
@@ -63,4 +68,5 @@
         </select>
     </div>
 </body>
+
 </html>
