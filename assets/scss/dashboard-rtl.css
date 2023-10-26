@@ -1,0 +1,98 @@
+body {
+  text-align: right;
+}
+
+.scroll-to-top {
+  left: 1rem;
+  right: unset;
+}
+
+.sidebar {
+  border-radius: 70px 0 0 0;
+}
+
+.sidebar .nav-item .nav-link {
+  text-align: right !important;
+}
+
+.sidebar.toggled .nav-item .nav-link {
+  text-align: center !important;
+}
+
+.sidebar #sidebarToggle::after {
+  content: "\f105";
+}
+
+.sidebar.toggled #sidebarToggle::after {
+  content: "\f104";
+}
+
+#userDropdown {
+  display: flex;
+  flex-direction: row-reverse;
+}
+
+.dropdown-item {
+  text-align: right;
+}
+
+.navbar-nav {
+  padding-right: 0;
+  padding-left: 0;
+}
+
+.ml-auto {
+  margin-right: auto !important;
+  margin-left: unset !important;
+}
+
+.mr-auto {
+  margin-left: auto !important;
+  margin-right: unset !important;
+}
+
+.input-group-append {
+  margin-left: 0 !important;
+  margin-right: -1px !important;
+}
+
+.input-group-append .btn {
+  border-top-left-radius: 0.35rem !important;
+  border-bottom-left-radius: 0.35rem !important;
+  border-top-right-radius: 0 !important;
+  border-bottom-right-radius: 0 !important;
+}
+
+.input-group:not(.has-validation) > .form-control:not(:last-child) {
+  border-top-left-radius: 0 !important;
+  border-bottom-left-radius: 0 !important;
+  border-top-right-radius: 0.35rem !important;
+  border-bottom-right-radius: 0.35rem !important;
+}
+
+@media (min-width: 576px) {
+  .topbar .dropdown .dropdown-menu {
+    right: -80px;
+  }
+}
+.single-news article .text-body, .post-details article .text-body, .single-events article .text-body {
+  padding-left: 30px;
+  padding-right: 0;
+}
+
+.hero .contact-con .title {
+  padding: 50px 40px 0 0;
+  text-align: right;
+}
+.hero .contact-con .input:hover,
+.hero .contact-con .input:focus, .hero .contact-con textarea:hover, .hero .contact-con textarea:focus, .hero .contact-con button:hover {
+  transform: scale(1.05) rotateY(-20deg);
+}
+.hero .select-wrapper::after {
+  left: 10px;
+  right: unset;
+  transform: translateY(-50%);
+}
+.hero img {
+  transform: rotateY(180deg);
+}/*# sourceMappingURL=dashboard-rtl.css.map */

@@ -12,3 +12,17 @@
     }
   }
 }
+.rtl {
+  @each $color, $value in $theme-colors {
+    @each $position in ( 'left' ) {
+      .border-#{$position}-#{$color} {
+        border-right: .25rem solid $value !important;
+        border-left: 0 solid $value !important;
+        transition: all 300ms ease-in-out;
+      }
+      .border-#{$position}-#{$color}:hover {
+        border-right: .5rem solid $value !important;
+      }
+    }
+  }
+}
