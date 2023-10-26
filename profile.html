@@ -2,20 +2,20 @@
 <html lang="en" dir="rtl" class="rtl">
 
 <head>
-
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>Game3y - Single event</title>
+    <title>Game3y - Profile</title>
 
     <!-- Custom fonts for this template-->
     <link href="assets/vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
 
     <!-- Custom styles for this template-->
     <link href="assets/scss/sb-admin-2.css" rel="stylesheet">
+    <link href="assets/css/profile.css" rel="stylesheet">
     <link href="assets/scss/dashboard-rtl.css" rel="stylesheet">
 
     <!-- Custom styles for this page -->
@@ -89,8 +89,9 @@
                     <i class="fas fa-fw fa-newspaper"></i>
                     <span>News</span></a>
             </li>
+
             <!-- Nav Item - Tables -->
-            <li class="nav-item active">
+            <li class="nav-item ">
                 <a class="nav-link" href="events.html">
                     <i class="fas fa-fw fa-calendar-day"></i>
                     <span>Events</span></a>
@@ -333,49 +334,155 @@
                 <!-- main content -->
                 <div class="container-fluid">
                     <div class="d-sm-flex align-items-center justify-content-between mb-4">
-                        <h1 class="h3 mb-0 text-gray-800"><a href="events.html">Latest events</a></h1>
+                        <h1 class="h3 mb-0 text-gray-800">Profile</h1>
                     </div>
-                    <div class="row">
-                        <div class="single-events">
-                            <article class="m-md-3">
-                                <h5 class="main-color">Lorem ipsum dolor sit amet consectetur.</h5>
-                                <div class="d-md-flex align-items-start mt-2">
-                                    <img src="assets/imgs/hero.webp" alt="events-picture"
-                                        class="order-md-2 img-fluid img-thumbnail news-pic">
-                                    <div class="text-body order-md-1">
-                                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Debitis,
-                                            perferendis distinctio quis modi
-                                            incidunt est error nesciunt in ipsa aliquid quos dignissimos accusamus esse
-                                            suscipit, adipisci minus
-                                            necessitatibus porro saepe vel. Officiis quisquam quia iure ut maiores earum
-                                            ratione voluptas. Voluptas
-                                            quaerat perferendis autem aperiam explicabo et nihil officia nisi.</p>
-                                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Delectus
-                                            perspiciatis, at tempora, labore
-                                            necessitatibus unde fuga quidem corporis, officia magni voluptates magnam
-                                            aut deleniti autem ipsum?
-                                            Delectus corrupti, quas unde impedit perspiciatis facere amet nemo
-                                            voluptatem doloribus assumenda dolore
-                                            aliquid.</p>
-                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium earum nam
-                                            debitis. Nisi nostrum
-                                            vitae, quae doloribus, repudiandae sint, nihil veritatis ad quisquam odit
-                                            eligendi quibusdam quos
-                                            laudantium. Facilis, rerum corrupti? Odio rerum pariatur blanditiis
-                                            voluptates repudiandae nostrum id
-                                            nihil inventore iste consequuntur sed totam nulla veniam velit architecto
-                                            quae reprehenderit minus sunt
-                                            quasi, repellat numquam corrupti dolorum et possimus.</p>
-                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis nostrum
-                                            ratione voluptates!</p>
+                    <div class="Profile-form">
+                        <form action="" class="form_main mb-5 register-form rounded-5 needs-validation">
+                            <div class="row">
+                                <div class="col-md-6 fields">
+                                    <div>
+                                        <div class="inputContainer">
+                                            <label for="FirstName"> First Name</label>
+                                            <input type="text" class="inputField" id="FirstName"
+                                                placeholder="First Name" value="Ahmed" required>
+                                            <div class="valid-response text-success">
+                                                Looks good!
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <div class="inputContainer">
+                                            <label for="LastName"> Last Name</label>
+                                            <input type="text" class="inputField" id="LastName" placeholder="Last Name"
+                                                value="Khaled">
+                                            <div class="valid-response text-danger">
+                                                Please Enter your last name
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <div class="inputContainer">
+                                            <label for="Email">Email</label>
+                                            <input type="email" class="inputField" id="Email"
+                                                placeholder="Email Address" value="ahmed.khaled@gmail.com">
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <div class="inputContainer">
+                                            <label for="password">Password</label>
+                                            <input type="password" class="inputField" id="password"
+                                                placeholder="Password" value="123445">
+                                            <div data-lastpass-icon-root="true"
+                                                style="position: relative !important; height: 0px !important; width: 0px !important; float: left !important;">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <div class="inputContainer">
+                                            <label for="Age">Age</label>
+                                            <input type="text" class="inputField" id="Age" placeholder="Age" value="21">
+                                        </div>
+                                    </div>
+
+                                    <div>
+                                        <div class="inputContainer">
+                                            <div class="select-wrapper">
+                                                <label for="Country">Country</label>
+                                                <select name="Country" id="Country">
+                                                    <option value="Egypt" selected="">Egypt</option>
+                                                    <option value="KSA">KSA</option>
+                                                    <option value="UAE">UAE</option>
+                                                </select>
+                                            </div>
+                                            <div class="valid-response text-danger">
+                                                Please Choose a country.
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <div class="inputContainer">
+                                            <div class="select-wrapper">
+                                                <label for="university">University</label>
+                                                <select name="university" id="university">
+                                                    <option value="Country" selected="">Alex</option>
+                                                    <option value="2">university 2</option>
+                                                    <option value="3">university 3</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <div class="inputContainer">
+                                            <div class="select-wrapper">
+                                                <label for="Faculty">Faculty</label>
+                                                <select name="Faculty" id="Faculty">
+                                                    <option value="Faculty" selected="">Engineering</option>
+                                                    <option value="Faculty 2">Faculty 2</option>
+                                                    <option value="Faculty 3">Faculty 3</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <div class="inputContainer">
+                                            <div class="select-wrapper">
+                                                <label for="Department">Department</label>
+                                                <select name="Department" id="Department">
+                                                    <option value="Department" selected="">Civil
+                                                    </option>
+                                                    <option value="Department 2">Department 2</option>
+                                                    <option value="Department 3">Department 3</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <div class="inputContainer">
+                                            <div class="select-wrapper">
+                                                <label for="Grade">Grade</label>
+                                                <select name="Grade" id="Grade">
+                                                    <option value="Grade" selected="">first</option>
+                                                    <option value="Grade 2">Grade 2</option>
+                                                    <option value="Grade 3">Grade 3</option>
+                                                </select>
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
-                            </article>
-                        </div>
+                                <div class="avatar col-md-6">
+                                    <div class="profile-container">
+                                        <div class="image-upload-container">
+                                            <img id="profileImage" src="assets/imgs/undraw_profile.svg"
+                                                alt="Profile Image" />
+
+                                            <input type="file" id="imageInput" accept="image/*"
+                                                style="display: none;" />
+                                            <button id="editButton" class="edit-btn" type="button">Upload</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <button id="button" class="register-btn">Save Changes</button>
+                        </form>
+                        <script>
+                            // This part is for the image preview functionality
+                            document.getElementById('editButton').addEventListener('click', function () {
+                                document.getElementById('imageInput').click();
+                            });
+
+                            document.getElementById('imageInput').addEventListener('change', function () {
+                                if (this.files && this.files[0]) {
+                                    var reader = new FileReader();
+                                    reader.onload = function (e) {
+                                        document.getElementById('profileImage').setAttribute('src', e.target.result);
+                                    }
+                                    reader.readAsDataURL(this.files[0]);
+                                }
+                            });
+                        </script>
                     </div>
+
                 </div>
-
-
 
             </div>
             <!-- End of Main Content -->

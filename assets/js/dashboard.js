@@ -36,7 +36,7 @@ $('.owl-carousel').owlCarousel({
     items: 1,
     dots: true,
     autoplay: true,
-    autoplayTimeout: 5000,  // Autoplay interval, in this case, 3 seconds
+    autoplayTimeout: 5000,  // Autoplay interval, in this case, 5 seconds
     smartSpeed: 1000,       // Speed of the transition in milliseconds
     slideSpeed: 1000        // Speed of slide animation in milliseconds
 });

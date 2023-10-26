@@ -1,0 +1,52 @@
+.hero .form_main:hover:before {
+  right: -500px;
+  left: unset;
+}
+.hero .form_main:before {
+  transform: rotate(-45deg);
+  right: -200px;
+  left: unset;
+}
+@media (max-width: 992px) {
+  .hero .form_main:before {
+    right: -240px;
+    left: unset;
+  }
+}
+.hero .inputIcon {
+  right: 3px;
+  left: unset;
+}
+.hero .inputField {
+  padding-right: 30px;
+}
+
+/*vision & Mission start*/
+.VisionMission .card:hover {
+  transform: rotate(5deg) scale(1.1);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+.VisionMission .card2:hover {
+  transform: rotate(-5deg) scale(1.1);
+}
+
+/* Offer start*/
+.Offer .card {
+  padding-right: 130px;
+  padding-left: unset;
+}
+.Offer .card:hover {
+  filter: drop-shadow(-5px 5px 0px #F6B93B) drop-shadow(-5px 5px 0px #DE1A02) drop-shadow(-5px 5px 0px #4A69BD);
+}
+.Offer .card-left:hover {
+  filter: drop-shadow(5px 5px 0px #F6B93B) drop-shadow(5px 5px 0px #DE1A02) drop-shadow(5px 5px 0px #4A69BD);
+}
+.Offer img {
+  right: 18px;
+  left: unset;
+}
+@media (max-width: 992px) {
+  .Offer .card {
+    padding-right: unset;
+  }
+}/*# sourceMappingURL=main-rtl.css.map */

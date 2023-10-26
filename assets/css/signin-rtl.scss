@@ -1,0 +1,47 @@
+$main-color: #4A69BD;
+$main-light:lighten($main-color,5%);
+$red-color: #DE1A02;
+$yellow-color: #F6B93B;
+
+.hero{
+    .contact-con{
+        .title{
+            padding: 50px 40px 0 0;
+        }          
+          .input:hover,
+          .input:focus,textarea:hover,textarea:focus,button:hover {
+            transform: scale(1.05) rotateY(-20deg);
+          }   
+      }
+      .select-wrapper::after {
+        left: 10px;
+        right: unset;
+        transform: translateY(-50%);
+    }
+    .form_main {
+        &:hover{
+            &:before{
+                right: -500px;
+                left: unset;
+            }
+        }
+        &:before {
+            transform: rotate(-45deg);
+            right: -200px;
+            left: unset;
+          }
+          @media(max-width:992px){
+            &:before{
+              right: -240px;
+              left: unset;
+            }
+          }
+      }
+      .inputIcon {
+        right: 3px;
+        left: unset;
+      }
+      .inputField {
+        padding-right: 30px;
+      }
+}
